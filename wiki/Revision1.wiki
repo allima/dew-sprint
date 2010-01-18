@@ -1,4 +1,4 @@
-#Sobre las historias de usuario
+Sobre las historias de usuario
 
 = Introducción =
 
