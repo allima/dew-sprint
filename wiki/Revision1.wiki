@@ -1,0 +1,5 @@
+#Sobre las historias de usuario
+
+= Introducción =
+
+He descargado el documento que publicaron. En esta Wiki les estaré indicando algunas observaciones.
