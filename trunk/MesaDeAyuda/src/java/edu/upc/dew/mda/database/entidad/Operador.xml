@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Operador">
+    <!-- Definimos un alias para nuestro JavaBean -->
+    <typeAlias alias="BeanOperador" type="edu.upc.dew.mda.bean.BeanOperador"/>
+	
+    <!-- Definimos las propiedades (atributos) de nuestro JavaBean, que serán pasados como parametros a una sentencia -->
+    <parameterMap id="operadorParametros" class="BeanOperador">
+        <parameter property="idpersona"/>
+        <parameter property="nombres"/>
+        <parameter property="apellidos"/>
+        <parameter property="area"/>
+        <parameter property="perfil"/>
+        <parameter property="clave"/>
+        <parameter property="grupo.idgrupo"/>
+        <parameter property="grupo.descripcion"/>
+        <parameter property="grupo.estado"/>
+    </parameterMap>
+
+    <!-- Definimos las propiedades (atributos) de nuestro JavaBean, que servirán para almacenar información de la columnas -->
+    <resultMap id="operadorResultado" class="BeanOperador">
+        <result property="idpersona" column="idpersona" />
+        <result property="nombres" column="nombres" />
+        <result property="apellidos" column="apellidos" />
+        <result property="area" column="area" />
+        <result property="perfil" column="perfil" />
+        <result property="clave" column="clave" />
+        <result property="grupo.idgrupo" column="idgrupo" />
+        <result property="grupo.descripcion" column="descripcion" />
+        <result property="grupo.estado" column="estado" />
+    </resultMap>
+	
+    <select id="validarOperador" parameterClass="BeanOperador" resultMap="operadorResultado">
+        select  p.idpersona, p.nombres, p.apellidos, p.area, p.perfil, p.clave, g.idgrupo, gr.descripcion, gr.estado
+        from    persona p, gestor g, grupo gr
+        where   p.idpersona=g.idgestor
+                and g.idgrupo=gr.idgrupo
+                and p.idpersona='$idpersona$'
+                and p.clave='$clave$';
+    </select>
+
+</sqlMap>
