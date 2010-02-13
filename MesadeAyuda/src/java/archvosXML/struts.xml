@@ -10,7 +10,6 @@
 
     <!-- Add packages here -->
 
-    <include file="operaciones.xml"/>
-    <include file="raicesXML.xml"/>
+    <include file="gestiondeTicket.xml"/>
 
 </struts>
