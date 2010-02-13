@@ -7,14 +7,12 @@
 <link rel="stylesheet" type="text/css" href="css/general.css"/>
 <script type="text/javascript" src="javascripts/handler.js"></script>
 <script type="text/javascript" src="javascripts/validacion.js"></script>
-<style type="text/css">
 
-</style>
 </head>
 
 <body marginheight="0" leftmargin="0" marginwidth="0" rightmargin="0" topmargin="0">
 <center>
-  <form name="formulario" method="post" action="Ir?a=mantenimiento_applet">
+  <form name="formulario" method="post" action="">
     <div align="left">
       <table width="587" border="0"  cellpadding="0" cellspacing="0">
         <tr>
@@ -46,13 +44,13 @@
       </tr>
       <tr>
         <td height="25" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
-          <!--DWLayoutTable-->
+         
           <tr>
             <td width="800" height="16" valign="middle"><hr align="center" width="800" /></td>
           </tr>
           <tr>
             <td height="16" valign="middle"><div align="right">
-              <input name="btnAgregar" type="button" class="texto" id="btnAgregar" value="Salir"/>
+              <input name="btnAgregar" type="button" class="texto" value="Salir"/>
             </div></td>
           </tr>
         </table></td>
@@ -69,7 +67,8 @@
       <tr>
         <td width="800" valign="top"><table width="800" border="0" cellpadding="0" cellspacing="0">
             <tr>
-              <td colspan="2" valign="top" bordercolor="#F0F0F0" bgcolor="#FFFFFF"><table align="center">
+              <td colspan="2" valign="top" bordercolor="#F0F0F0" bgcolor="#FFFFFF">
+                  <table align="center">
                 <tr class="titulo">
                   <td colspan="2"><div align="center">Ingrese su usuario y password </div></td>
                 </tr>
@@ -85,15 +84,16 @@
                   <td align="center"><input type="password" name="password"/></td>
                 </tr>
                 <tr class="texto">
-                  <td colspan="2" align="center"><input name="Button2" type="button" class="texto" value="Ingresar" onclick="javascript:loginticket(formulario);"/>
+                  <td colspan="2" align="center">
+                      <input name="Button2" type="button" class="texto" value="Ingresar" onclick="javascript:loginticket(formulario);"/>
                   </td>
                 </tr>
               </table>
-              <label></label></td>
+              </td>
             </tr>
-            <!--DWLayoutTable-->
+            
             <tr>
-              <td colspan="2" valign="top" bgcolor="#FFFFFF"><!--DWLayoutEmptyCell-->&nbsp;</td>
+              <td colspan="2" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
             </tr>
             <tr>
               <td colspan="2" valign="top" bgcolor="#FFFFFF"><hr align="center" width="800" /></td>
