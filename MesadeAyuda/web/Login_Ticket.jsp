@@ -13,7 +13,7 @@
     <script type="text/javascript" src="javascripts/handler.js"></script>
     <script type="text/javascript" src="javascripts/validacion.js"></script>
 <center>
-  <form action="<%=request.getContextPath()%>/gestiondeTicket/Login.action" method="post">
+  <form action="<%=request.getContextPath()%>/archvosXML/gestiondeTicket/Login.action" method="post">
     <div align="left">
       <table width="587" border="0"  cellpadding="0" cellspacing="0">
         <tr>
