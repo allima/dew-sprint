@@ -5,14 +5,13 @@
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-    </head>
-<link rel="stylesheet" type="text/css" href="/css/general.css"/>
-<script type="text/javascript" src="/javascripts/handler.js"></script>
-<script type="text/javascript" src="/javascripts/validacion.js"></script>
-
+        <link rel="stylesheet" type="text/css" href="css/general.css"/>
 </head>
 
+
 <body>
+    <script type="text/javascript" src="javascripts/handler.js"></script>
+    <script type="text/javascript" src="javascripts/validacion.js"></script>
 <center>
   <form name="formulario" method="post" action="">
     <div align="left">
@@ -25,7 +24,7 @@
           <td width="8" bordercolor="#FFFFFF" bgcolor="#66CC66">&nbsp;</td>
           <td width="9" bordercolor="#FFFFFF" bgcolor="#FBFE83">&nbsp;</td>
           <td width="9" bordercolor="#FFFFFF" bgcolor="#66CC66">&nbsp;</td>
-          <td width="505" bordercolor="#FFFFFF" bgcolor="#66CC66"><%--<span class="Estilo5">--%> . . . MESA DE AYUDA</span></td>
+          <td width="505" bordercolor="#FFFFFF" bgcolor="#66CC66"><span class="Estilo5"> . . . MESA DE AYUDA</span></td>
         </tr>
       </table>
     </div>
