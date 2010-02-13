@@ -1,50 +1,48 @@
-package Entidad;
-
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-// #[regen=yes,id=DCE.C443881F-B38A-776C-FBC6-8166C49444F6]
+// #[regen=yes,id=DCE.0A3EA090-B3B0-D8A6-43C9-FF6C812C9FDC]
 // </editor-fold> 
-public class Grupo {
+public class TipoProblema {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.D463E93C-8F9D-0E29-A9F4-A0DDF438E5F0]
+    // #[regen=yes,id=DCE.2D948342-84C9-4881-F162-52FEDE23B46E]
     // </editor-fold> 
-    private int CodGrupo;
+    private int Codigo;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.0A3AB471-E1CA-9321-2545-9E08A44B3F75]
+    // #[regen=yes,id=DCE.202B06E7-BEBF-1A52-B8E3-09A3AF7112E9]
     // </editor-fold> 
     private String Descripcion;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.007B5772-DF6E-0BA9-20B2-ED4579E68761]
+    // #[regen=yes,id=DCE.B5497651-05FC-BB80-F3DF-2C56F89C15B4]
     // </editor-fold> 
-    public Grupo () {
+    public TipoProblema () {
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.8C713F61-9CCB-44D8-B81E-B4432F07B2D6]
+    // #[regen=yes,regenBody=yes,id=DCE.DC085610-AA33-E73D-A12F-4C5F81872560]
     // </editor-fold> 
-    public int getCodGrupo () {
-        return CodGrupo;
+    public int getCodigo () {
+        return Codigo;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.ADBAECBC-0A82-89E7-E482-797FF4D590CD]
+    // #[regen=yes,regenBody=yes,id=DCE.F9387385-B616-700C-CE01-8A117EF8D5C1]
     // </editor-fold> 
-    public void setCodGrupo (int val) {
-        this.CodGrupo = val;
+    public void setCodigo (int val) {
+        this.Codigo = val;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.F57C7B37-EC3D-666D-72BF-5F7088C9EFFF]
+    // #[regen=yes,regenBody=yes,id=DCE.6B45A122-2C5F-A553-9CC4-750F119DE6DA]
     // </editor-fold> 
     public String getDescripcion () {
         return Descripcion;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.C6DF2920-2CF0-8BE6-CB39-4E51EC91F8A3]
+    // #[regen=yes,regenBody=yes,id=DCE.BA4F163D-8D4A-4338-F04B-EB9057310C85]
     // </editor-fold> 
     public void setDescripcion (String val) {
         this.Descripcion = val;

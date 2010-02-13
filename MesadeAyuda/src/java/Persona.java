@@ -1,5 +1,3 @@
-package Entidad;
-
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.9919EB1B-4A47-7099-BC63-D7421E4107EB]
@@ -9,7 +7,7 @@ public class Persona {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.59EE960C-5C76-765D-543C-2EF4723FA875]
     // </editor-fold> 
-    private String UsuaraioId;
+    private String UsuarioId;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.E5D0DC27-2C62-2E17-633C-89D0B2872455]
@@ -30,6 +28,11 @@ public class Persona {
     // #[regen=yes,id=DCE.8C051C8F-D485-A045-BB5E-35AC6C6600B2]
     // </editor-fold> 
     private String Perfil;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.CE9B3806-EB57-E769-190C-3880114C51B2]
+    // </editor-fold> 
+    private String Password;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.5445B9D4-79BD-13B4-C091-B5BA4D2D9478]
@@ -80,6 +83,20 @@ public class Persona {
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.200A2AFF-AEFC-9CB5-3DC0-D345A46A0672]
+    // </editor-fold> 
+    public String getPassword () {
+        return Password;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.BCC49D7A-0F6A-3908-1356-BA2AF2FD1F19]
+    // </editor-fold> 
+    public void setPassword (String val) {
+        this.Password = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.F571519D-1A47-02D5-3B5C-63C1157DD891]
     // </editor-fold> 
     public String getPerfil () {
@@ -96,15 +113,15 @@ public class Persona {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.5F5B8D9F-FBB0-75F8-ABFD-6638A5A14D0F]
     // </editor-fold> 
-    public String getUsuaraioId () {
-        return UsuaraioId;
+    public String getUsuarioId () {
+        return UsuarioId;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.340CB752-6812-01DB-B7F7-4DB6785448B7]
     // </editor-fold> 
-    public void setUsuaraioId (String val) {
-        this.UsuaraioId = val;
+    public void setUsuarioId (String val) {
+        this.UsuarioId = val;
     }
 
 }
