@@ -1,4 +1,3 @@
-<%@page import="com.mhb.bean.*" %>
 <%@page import="java.util.*" %>
 <%@ page contentType="text/html; charset=iso-8859-1" language="java" errorPage="" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -77,7 +76,7 @@
                     <td colspan="8" align="center" bgcolor="#FFFFFF" scope="col"><div align="right">
                       <input name="btnAgregar3" type="button" class="texto" id="btnAgregar3" onclick="javascript:grabarcierre(formulario);"  value="Grabar"/>
                       <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="javascript:listaticket(formulario);" value="Regresar"/>
-                    <span class="Estilo7">.                      </span></div></td>
+                    <span class="Estilo7">.</span></div></td>
                   </tr>
                   
                   <tr valign="middle" bgcolor="#FFFFFF" class="cabecera">
@@ -168,7 +167,7 @@
                   </tr>
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                     <td align="center" valign="top" bgcolor="#FFFFFF" scope="col"><div align="left">Observaci&oacute;n</div></td>
-                    <td colspan="4" bgcolor="#FFFFFF" scope="col"><textarea name="idobservacion" id="idobservacion" cols="40" rows="5"></textarea>                    </td>
+                    <td colspan="4" bgcolor="#FFFFFF" scope="col"><textarea name="idobservacion" id="idobservacion" cols="40" rows="5"></textarea></td>
                     <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                     <td colspan="4" bgcolor="#FFFFFF" scope="col"><table width="345" height="52" border="0">
                       
@@ -216,17 +215,6 @@
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                     <td colspan="8" align="center" bgcolor="#FFFFFF" scope="col"><div align="right"></div></td>
                   </tr>
-                  <%
-                    List<BeanApplet> lista = (List <BeanApplet>) request.getAttribute("listaApplet");
-                    if(lista == null || lista.size() == 0){
-          %>
-                  <%
-          		} else {		
-          		for(int i = 0; i< lista.size(); i++){
-          			BeanApplet beanApplet = lista.get(i);
-          %>
-                  <%	}
-			}%>
                 </table>
         <label></label>
                   <label></label>

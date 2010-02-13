@@ -1,4 +1,3 @@
-<%@page import="com.mhb.bean.*" %>
 <%@page import="java.util.*" %>
 <%@ page contentType="text/html; charset=iso-8859-1" language="java" errorPage="" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -164,17 +163,6 @@
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                     <td colspan="6" align="center" bgcolor="#FFFFFF" scope="col"><div align="right"></div></td>
                   </tr>
-                  <%
-                    List<BeanApplet> lista = (List <BeanApplet>) request.getAttribute("listaApplet");
-                    if(lista == null || lista.size() == 0){
-          %>
-                  <%
-          		} else {		
-          		for(int i = 0; i< lista.size(); i++){
-          			BeanApplet beanApplet = lista.get(i);
-          %>
-                  <%	}
-			}%>
                 </table>
 <label></label>
                   <label></label>
