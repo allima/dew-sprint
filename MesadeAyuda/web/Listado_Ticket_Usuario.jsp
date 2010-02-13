@@ -135,18 +135,11 @@
                     <td width="55" align="center" scope="col"><div align="center" class="Estilo2">Estado</div></td>
                     <td scope="col"><div align="center" class="Estilo2">Opciones</div></td>
                   </tr>
-                  <%
-                    List<BeanApplet> lista = (List <BeanApplet>) request.getAttribute("listaApplet");
-                    if(lista == null || lista.size() == 0){
-          %>
+                
                   <tr align="center" class="texto">
                     <td colspan="10" bgcolor="#FBFE83" class="texto">&nbsp;</td>
                   </tr>
-                  <%
-          		} else {		
-          		for(int i = 0; i< lista.size(); i++){
-          			BeanApplet beanApplet = lista.get(i);
-          %>
+                
                   <tr class="texto">
                     <td class="texto" align="center"><label>
                       <input type="checkbox" name="id_check" id="id_check" />
@@ -196,8 +189,7 @@
                   <tr class="texto">
                     <td colspan="9" align="center" bgcolor="#66CC66" class="texto">&nbsp;</td>
                   </tr>
-                  <%	}
-			}%>
+                 
                 </table>
               <input type="text" name="textfield" id="textfield" /></td>
             </tr>
