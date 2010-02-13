@@ -1,3 +1,5 @@
+package Entidad;
+
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.3AE9F9E1-7BA2-CEDD-8B75-A40213351AF9]
