@@ -1,0 +1,29 @@
+<XMI xmi.version="1.2"  xmlns:UML="org.omg.xmi.namespace.UML"  timestamp="24 de enero de 2010 11:29:27 PM COT" >
+<XMI.content>
+<UML:Diagram isVisible="false"  zoom="1.0"  name="TicketMesaAyudaDependencies"  xmi.id="DCE.AB3D0AED-2E76-1C49-A08D-F156B1E51A33" >
+<UML:GraphElement.position>
+     <XMI.field>0</XMI.field>
+     <XMI.field>0</XMI.field>
+</UML:GraphElement.position>
+<UML:GraphNode.size>
+     <XMI.field>840</XMI.field>
+     <XMI.field>546</XMI.field>
+</UML:GraphNode.size>
+<UML:Diagram.viewport>
+     <XMI.field>0</XMI.field>
+     <XMI.field>0</XMI.field>
+</UML:Diagram.viewport>
+<UML:DiagramElement.property>
+<UML:Property value="DCE.3EBD4805-E6B2-578E-22AB-0EC17D542598"  key="netbeans-diagram-namespace" />
+<UML:Property value="DCE.603C0277-4F3A-268B-0BE5-4A0BCAA6196D"  xmi.id="Property2_PEID"  key="netbeans-diagram-projectID" />
+</UML:DiagramElement.property>
+<UML:GraphElement.semanticModel>
+<UML:SimpleSemanticModelElement presentation=""  xmi.id="DCE.AB3D0AED-2E76-1C49-A08D-F156B1E51A33"  typeinfo="Class Diagram" />
+</UML:GraphElement.semanticModel>
+<UML:GraphElement.contained>
+</UML:GraphElement.contained>
+<UML:Diagram.owner>
+</UML:Diagram.owner>
+</UML:Diagram>
+</XMI.content>
+</XMI>
