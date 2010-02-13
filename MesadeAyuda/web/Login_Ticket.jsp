@@ -86,7 +86,7 @@
                 </tr>
                 <tr class="texto">
                   <td colspan="2" align="center">
-                      <input name="Button2" type="submit" class="texto" value="Ingresar" onclick=""/>
+                      <input type="submit" value="Ingresar"/>
                   </td>
                 </tr>
               </table>
