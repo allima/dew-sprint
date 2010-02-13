@@ -4,7 +4,7 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-    <package name="paquete_tickets" namespace="/archvosXML/gestiondeTicket" extends="struts-default">
+    <package name="paquete_tickets" namespace="/gestiondeTicket" extends="struts-default">
         <action name="Login" class="Entidad.Persona" method="logueo">
             <result name="todo_bien">/Listado_Ticket.jsp</result>
             <result name="problemas">/Login_Ticket.jsp</result>
