@@ -8,17 +8,7 @@
 <script type="text/javascript" src="javascripts/handler.js"></script>
 <script type="text/javascript" src="javascripts/validacion.js"></script>
 <style type="text/css">
-<!--
-.Estilo2 {color: #000000; }
-.Estilo5 {
-	font-size: 36px;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-.Estilo6 {
-	font-size: 18px
-}
--->
+
 </style>
 </head>
 
