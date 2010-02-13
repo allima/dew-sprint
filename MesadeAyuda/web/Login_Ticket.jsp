@@ -13,7 +13,7 @@
     <script type="text/javascript" src="javascripts/handler.js"></script>
     <script type="text/javascript" src="javascripts/validacion.js"></script>
 <center>
-  <form name="formulario" method="post" action="">
+  <form action="<%=request.getContextPath()%>/gestiondeTicket/Login.action" method="post">
     <div align="left">
       <table width="587" border="0"  cellpadding="0" cellspacing="0">
         <tr>
@@ -86,7 +86,7 @@
                 </tr>
                 <tr class="texto">
                   <td colspan="2" align="center">
-                      <input name="Button2" type="button" class="texto" value="Ingresar" onclick=""/>
+                      <input name="Button2" type="submit" class="texto" value="Ingresar" onclick=""/>
                   </td>
                 </tr>
               </table>
