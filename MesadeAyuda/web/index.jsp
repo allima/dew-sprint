@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
-    Created on : 13/01/2010, 08:35:18 PM
-    Author     : u512480
+    Created on : 13/02/2010, 11:46:51 AM
+    Author     : Charly
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -14,7 +14,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!
-        Bye World otra cosa</h1>
+        <h1>Hello World!</h1>
     </body>
 </html>
