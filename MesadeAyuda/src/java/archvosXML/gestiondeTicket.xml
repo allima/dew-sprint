@@ -7,7 +7,7 @@
     <package name="paquete_tickets" namespace="/archvosXML/gestiondeTicket" extends="struts-default">
         <action name="Login" class="Entidad.Persona" method="logueo">
             <result name="todo_bien">/Listado_Ticket.jsp</result>
-            <result name="problemas">/Error.jsp</result>
+            <result name="problemas">/Login_Ticket.jsp</result>
         </action>
     </package>
 </struts>
