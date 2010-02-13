@@ -126,5 +126,9 @@ public class Persona {
         this.UsuarioId = val;
     }
 
+    public String logueo(){
+
+        return "todo_bien";
+    }
 }
 
