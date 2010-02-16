@@ -121,11 +121,11 @@ public class Persona {
     }
 
     public String logueo() {
-        if (UsuarioId.equals("")){
-            return "problemas";
-        }
-            return "todo_bien";
-        }
-    
+
+       // if (UsuarioId.isEmpty()) {
+      //      return "problemas";
+        //}
+        return "todo_bien";
+    }
 }
 
