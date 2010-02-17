@@ -1,3 +1,4 @@
+<%@page import="com.mhb.bean.*" %>
 <%@page import="java.util.*" %>
 <%@ page contentType="text/html; charset=iso-8859-1" language="java" errorPage="" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -26,7 +27,7 @@
 
 <body marginheight="0" leftmargin="0" marginwidth="0" rightmargin="0" topmargin="0">
 <center>
-  <form action="<%=request.getContextPath()%>/gestiondeTicket/Nuevo.action" method="post">
+  <form name="formulario" method="post" action="Ir?a=mantenimiento_applet">
     <div align="left">
       <table width="587" border="0"  cellpadding="0" cellspacing="0">
         <tr>
@@ -133,6 +134,7 @@
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                     <td colspan="8" align="center" bgcolor="#FFFFFF" scope="col"><hr align="center" width="800" /></td>
                   </tr>
+                 
                 </table>
                   <label></label></td>
             </tr>
@@ -141,8 +143,7 @@
               <td colspan="2" valign="top" bgcolor="#FFFFFF"><!--DWLayoutEmptyCell-->&nbsp;</td>
             </tr>
             <tr>
-              <td colspan="2" valign="top" bgcolor="#FFFFFF">
-            <table width="800" border="1" align="center" cellpadding="1" cellspacing="0" class="texto">
+              <td colspan="2" valign="top" bgcolor="#FFFFFF"><table width="800" border="1" align="center" cellpadding="1" cellspacing="0" class="texto">
                   <tr valign="middle" bgcolor="#66CC66" class="cabecera">
                     <td width="25" align="center" scope="col">&nbsp;</td>
                     <td width="104" align="center" scope="col"><div align="center" class="Estilo2">Ticket</div></td>
@@ -154,9 +155,11 @@
                     <td width="55" align="center" scope="col"><div align="center" class="Estilo2">Estado</div></td>
                     <td colspan="4" scope="col"><div align="center" class="Estilo2">Opciones</div></td>
                   </tr>
+                 
                   <tr align="center" class="texto">
                     <td colspan="12" bgcolor="#FBFE83" class="texto">&nbsp;</td>
                   </tr>
+                  
                   <tr class="texto">
                     <td class="texto" align="center"><label>
                       <input type="checkbox" name="id_check" id="id_check" />
@@ -168,7 +171,7 @@
                     <td class="texto"><div align="center">Comunicaciones</div></td>
                     <td class="texto" align="center">Jose Paredez</td>
                     <td align="center" class="texto">Derivado</td>
-                    <td width="23" class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario)"><img src="images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                    <td width="23" class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                     <td width="23" class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
                     <td width="23" class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
                     <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
@@ -218,6 +221,7 @@
                   <tr class="texto">
                     <td colspan="12" align="center" bgcolor="#66CC66" class="texto">&nbsp;</td>
                   </tr>
+                 
                 </table>
               
             </tr>
