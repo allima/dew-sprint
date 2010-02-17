@@ -218,8 +218,6 @@
                   <tr class="texto">
                     <td colspan="12" align="center" bgcolor="#66CC66" class="texto">&nbsp;</td>
                   </tr>
-                  <%	}
-			}%>
                 </table>
               
             </tr>
