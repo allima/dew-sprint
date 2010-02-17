@@ -141,7 +141,8 @@
               <td colspan="2" valign="top" bgcolor="#FFFFFF"><!--DWLayoutEmptyCell-->&nbsp;</td>
             </tr>
             <tr>
-              <td colspan="2" valign="top" bgcolor="#FFFFFF"><table width="800" border="1" align="center" cellpadding="1" cellspacing="0" class="texto">
+              <td colspan="2" valign="top" bgcolor="#FFFFFF">
+            <table width="800" border="1" align="center" cellpadding="1" cellspacing="0" class="texto">
                   <tr valign="middle" bgcolor="#66CC66" class="cabecera">
                     <td width="25" align="center" scope="col">&nbsp;</td>
                     <td width="104" align="center" scope="col"><div align="center" class="Estilo2">Ticket</div></td>
@@ -153,18 +154,9 @@
                     <td width="55" align="center" scope="col"><div align="center" class="Estilo2">Estado</div></td>
                     <td colspan="4" scope="col"><div align="center" class="Estilo2">Opciones</div></td>
                   </tr>
-                  <%
-                    List<BeanApplet> lista = (List <BeanApplet>) request.getAttribute("listaApplet");
-                    if(lista == null || lista.size() == 0){
-          %>
                   <tr align="center" class="texto">
                     <td colspan="12" bgcolor="#FBFE83" class="texto">&nbsp;</td>
                   </tr>
-                  <%
-          		} else {		
-          		for(int i = 0; i< lista.size(); i++){
-          			BeanApplet beanApplet = lista.get(i);
-          %>
                   <tr class="texto">
                     <td class="texto" align="center"><label>
                       <input type="checkbox" name="id_check" id="id_check" />
@@ -179,7 +171,7 @@
                     <td width="23" class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                     <td width="23" class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
                     <td width="23" class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
-                    <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario,'<%=beanApplet.getID()%>');"><img src="images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
+                    <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
                   </tr>
                   <tr class="texto">
                     <td class="texto" align="center"><input type="checkbox" name="id_check2" id="id_check2" /></td>
@@ -193,7 +185,7 @@
                     <td class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                     <td class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
                     <td class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
-                    <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario,'<%=beanApplet.getID()%>');"><img src="images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
+                    <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
                   </tr>
                   <tr class="texto">
                     <td class="texto" align="center"><input type="checkbox" name="id_check3" id="id_check3" /></td>
@@ -207,7 +199,7 @@
                     <td class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                     <td class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
                     <td class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
-                    <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario,'<%=beanApplet.getID()%>');"><img src="images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
+                    <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
                   </tr>
                   <tr class="texto">
                     <td class="texto" align="center">&nbsp;</td>
