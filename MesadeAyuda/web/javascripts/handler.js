@@ -6,7 +6,7 @@ function login(form){
 	form.submit();	
 };
 function logoff(form){
-	<!--if(confirm('¿Esta seguro de cerrar la sesion actual ?')){-->
+	<!--if(confirm('Esta seguro de cerrar la sesion actual ?')){-->
 		form.action = 'Ir?a=logeo';
 		form.metodo.value = 'logoff';
 		form.target='_self';
@@ -15,7 +15,7 @@ function logoff(form){
 };
 
 function Eliminar_Ticket(form, disID){
-	if(confirm('¿Desea eliminar el Ticket y toda su información?')){
+	if(confirm('Desea eliminar el Ticket y toda su informacion?')){
 		
 	};
 };
@@ -94,17 +94,17 @@ form.action = 'Listado_Ticket.html';
 form.submit();
 };
 function grabarmnt(form){
-alert('Grabación satisfactoria');
+alert('Grabaciï¿½n satisfactoria');
 form.action = 'Mantenimiento_Ticket.html';
 form.submit();
 };
 function grabarticket(form){
-alert('Grabación satisfactoria');
+alert('Grabaciï¿½n satisfactoria');
 form.action = 'Listado_Ticket.html';
 form.submit();
 };
 function grabarderivacion(form){
-alert('Se realizo la derivación satisfactoriamente');
+alert('Se realizo la derivaciï¿½n satisfactoriamente');
 form.action = 'Listado_Ticket.html';
 form.submit();
 };
@@ -118,7 +118,7 @@ function cerrar(){
 	window.close();
 };
 function preguntarYcerrar(){
-	if(confirm('¿Desea salir de Mesa de Ayuda?')){
+	if(confirm('ï¿½Desea salir de Mesa de Ayuda?')){
 		window.close();
 	}
 };
