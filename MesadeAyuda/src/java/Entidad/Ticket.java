@@ -343,5 +343,9 @@ public class Ticket {
         this.impacto = val;
     }
 
+   public String nuevoTicket(){
+       
+       return "todo_bien";
+   }
 }
 

@@ -9,5 +9,11 @@
             <result name="todo_bien">/Listado_Ticket.jsp</result>
             <result name="problemas">/Login_Ticket.jsp</result>
         </action>
+
+        <action name="Nuevo" class="Entidad.Ticket" method="nuevoTicket">
+            <result name="todo_bien">/Listado_Ticket.jsp</result>
+            <result name="problemas">/Login_Ticket.jsp</result>
+        </action>
+
     </package>
 </struts>
