@@ -27,7 +27,7 @@
 
 <body marginheight="0" leftmargin="0" marginwidth="0" rightmargin="0" topmargin="0">
 <center>
-  <form name="formulario" method="post" action="Ir?a=mantenimiento_applet">
+  <form action="<%=request.getContextPath()%>/gestiondeTicket/Nuevo.action" method="post">
     <div align="left">
       <table width="587" border="0"  cellpadding="0" cellspacing="0">
         <tr>
