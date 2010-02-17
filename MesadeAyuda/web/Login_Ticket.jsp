@@ -100,7 +100,7 @@
               <td colspan="2" valign="top" bgcolor="#FFFFFF"><hr align="center" width="800" /></td>
             </tr>
             <tr>
-                <td valign="top"><table width="580" border="0" align="left" cellpadding="0" cellspacing="0" <%--class="texto"--%>>
+                <td valign="top"><table width="580" border="0" align="left" cellpadding="0" cellspacing="0"class="texto">
                   <tr>
                     <td align="left">&nbsp;</td>
                   </tr>
@@ -115,7 +115,7 @@
                   </tr>
               </table></td>
               <td width="525" valign="top"><div align="right">
-                      <input name="Button" type="button" <%--class="texto"--%> value="Salir"/>
+                      <input name="Button" type="button" class="texto" value="Salir"/>
               </div></td>
             </tr>
         </table></td>
