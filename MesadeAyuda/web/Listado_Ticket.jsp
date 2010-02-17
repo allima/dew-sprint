@@ -66,7 +66,8 @@
           <tr>
             <td width="437" height="16" valign="middle"><input name="btnAgregar2" type="button" class="texto" id="btnAgregar2" onclick="javascript:mantenimiento(formulario);" value="Mantenimiento"/></td>
             <td width="524" valign="middle"><div align="right">
-              <input name="btnAgregar4" type="button" class="texto" id="btnAgregar4" onclick="javascript:nuevoticket(formulario);" value="Nuevo"/>
+              <!--<input name="btnAgregar4" type="button" class="texto" id="btnAgregar4" onclick="javascript:nuevoticket(formulario);" value="Nuevo"/>-->
+              <input type="submit" value="Nuevo"/>
               <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="javascript:cerrarticket(formulario);" value="Cerrar Sesi&oacute;n"/>
             </div></td>
           </tr>
