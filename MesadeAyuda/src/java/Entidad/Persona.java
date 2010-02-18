@@ -29,6 +29,11 @@ public class Persona {
     // #[regen=yes,id=DCE.CE9B3806-EB57-E769-190C-3880114C51B2]
     // </editor-fold> 
     private String Password;
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.CE9B3806-EB57-E769-190C-3880114C51B2]
+    // </editor-fold> 
+    private int Rol;
+
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.5445B9D4-79BD-13B4-C091-B5BA4D2D9478]
@@ -120,12 +125,13 @@ public class Persona {
         this.UsuarioId = val;
     }
 
-    public String logueo() {
-
-       //if (UsuarioId!=Null) {
-            //return "problemas";
-        //}
-        return "todo_bien";
+    public int getRol() {
+        return Rol;
     }
+
+    public void setRol(int Rol) {
+        this.Rol = Rol;
+    }
+
 }
 
