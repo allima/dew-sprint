@@ -122,7 +122,7 @@ public class Persona {
 
     public String logueo() {
 
-       //if (UsuarioId.isEmpty()) {
+       //if (UsuarioId!=Null) {
             //return "problemas";
         //}
         return "todo_bien";
