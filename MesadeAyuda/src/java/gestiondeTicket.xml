@@ -4,50 +4,12 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-
-    <package name="Inicio" namespace="/" extends="struts-default">
-
-        <global-results>
-            <result name="Login">/login.jsp</result>
-        </global-results>
-        
-        <interceptors>
-            <interceptor name="usuario-final" class="interceptores.UsuariofinalInterceptor" />
-            <interceptor name="usuario-mesaAyuda" class="interceptores.UsuariomesaAyudaInterceptor" />
-            <interceptor name="usuario-admin" class="interceptores.UsuarioadminInterceptor" />
-        </interceptors>
-
-        <action name="Login" class="Entidad.LoginAction">
-            <result name="ok">/portada.jsp</result>
-            <result name="error">/error.jsp</result>
-            <interceptor-ref name="basicStack"></interceptor-ref>
+     <package name="paquete_tickets" namespace="/gestiondeTicket" extends="struts-default">
+        <action name="Login" class="Entidad.Persona" method="logueo">
+            <result name="todo_bien">/Listado_Ticket.jsp</result>
+            <result name="problemas">/Login_Ticket.jsp</result>
         </action>
 
-        <action name="PortalUsuFinal" class="Entidad.PortalUsuFinalAction">
-            <result name="ok">/Listado_Ticket_Usuario.jsp</result>
-            <interceptor-ref name="basicStack"></interceptor-ref>
-            <interceptor-ref name="usuario-final"></interceptor-ref>
-        </action>
-        <action name="PortalMesaAyuda" class="Entidad.PortalMesaAyudaAction">
-            <result name="ok">/Listado_Ticket.jsp</result>
-            <interceptor-ref name="basicStack"></interceptor-ref>
-            <interceptor-ref name="usuario-mesaAyuda"></interceptor-ref>
-        </action>
-        <action name="PortalAdmin" class="Entidad.PortalAdminAction">
-            <result name="ok">/Mantenimiento_Ticket.jsp</result>
-            <interceptor-ref name="basicStack"></interceptor-ref>
-            <interceptor-ref name="usuario-admin"></interceptor-ref>
-        </action>
-
-        <action name="Salir" class="Entidad.SalirAction">
-            <result name="ok">/Login_Ticket.jsp</result>
-            <interceptor-ref name="basicStack"></interceptor-ref>
-        </action>
-
-    </package>
-
-    <package name="paquete_tickets" namespace="/gestiondeTicket" extends="Inicio">
-      
         <action name="Nuevo" class="Entidad.Ticket" method="nuevoTicket">
             <result name="todo_bien">/Registro_Ticket.jsp</result>
             <result name="problemas">/Login_Ticket.jsp</result>

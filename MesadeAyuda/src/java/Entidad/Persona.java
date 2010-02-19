@@ -132,5 +132,13 @@ public class Persona {
     public void setRol(int Rol) {
         this.Rol = Rol;
     }
+
+    public String logueo() {
+
+       //if (UsuarioId.isEmpty()) {
+            //return "problemas";
+        //}
+        return "todo_bien";
+    }
 }
 
