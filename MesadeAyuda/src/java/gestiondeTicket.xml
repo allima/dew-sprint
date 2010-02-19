@@ -18,7 +18,7 @@
         </interceptors>
 
         <action name="Login" class="Entidad.LoginAction">
-            <result name="ok">/Listado_Ticket.jsp</result>
+            <result name="ok">/portada.jsp</result>
             <result name="error">/error.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
