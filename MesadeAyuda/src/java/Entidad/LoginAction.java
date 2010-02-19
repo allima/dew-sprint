@@ -46,8 +46,7 @@ public class LoginAction {
         u.setPassword("upc");
         u.setRol(200);
 
-        if (u.getUsuarioId().equals(usuario) &&
-                u.getPassword().equals(clave)) {
+        if (u.getUsuarioId().equals(usuario) && u.getPassword().equals(clave)) {
 
             HttpServletRequest request = ServletActionContext.getRequest();
             HttpSession session = request.getSession();

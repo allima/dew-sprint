@@ -132,6 +132,5 @@ public class Persona {
     public void setRol(int Rol) {
         this.Rol = Rol;
     }
-
 }
 
