@@ -14,47 +14,49 @@ import org.apache.struts2.ServletActionContext;
  */
 public class LoginAction {
 
-    private String usuario;
-    private String clave;
+    private String UsuarioId;
+    private String Password;
 
-    public String getClave() {
-        return clave;
+
+    public String getPassword() {
+        return Password;
     }
 
-    public void setClave(String clave) {
-        this.clave = clave;
+    public void setPassword(String Password) {
+        this.Password = Password;
     }
 
-    public String getUsuario() {
-        return usuario;
+    public String getUsuarioId() {
+        return UsuarioId;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setUsuarioId(String UsuarioId) {
+        this.UsuarioId = UsuarioId;
     }
+
 
     public String execute() {
         System.out.println("Dentro de execute()");
-        System.out.println(usuario);
-        System.out.println(clave);
+        System.out.println(UsuarioId);
+        System.out.println(Password);
 
         // Lógica de negocios -> Capa de persistencia
 
         Persona u = new Persona();
         u.setUsuarioId("rluna");
-        u.setNombres("Nuevito");
+        u.setNombres("Risky Luna Vega");
         u.setPassword("upc");
         u.setRol(200);
 
-        if (u.getUsuarioId().equals(usuario) && u.getPassword().equals(clave)) {
+        if (u.getUsuarioId().equals(UsuarioId) && u.getPassword().equals(Password)) {
 
             HttpServletRequest request = ServletActionContext.getRequest();
             HttpSession session = request.getSession();
             session.setAttribute("USUARIO_ACTUAL", u);
             System.out.println("Guardando en sesion: " + u.getNombres());
-            return "ok";
+            return "todo_bien";
         } else {
-            return "error";
+            return "problemas";
         }
     }
 }

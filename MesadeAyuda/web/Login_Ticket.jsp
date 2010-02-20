@@ -51,7 +51,7 @@
           </tr>
           <tr>
             <td height="16" valign="middle"><div align="right">
-                    <input name="btnAgregar" type="button" class="texto" value="Salir"/>
+                    <input name="Button" type="button" class="texto" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Salir.action'" value="Salir"/>
             </div></td>
           </tr>
         </table></td>
@@ -78,11 +78,11 @@
                 </tr>
                 <tr class="texto">
                   <td align="center">Usuario:</td>
-                  <td align="center"><input type="text" name="user"/></td>
+                  <td align="center"><input type="text" name="UsuarioId"/></td>
                 </tr>
                 <tr class="texto">
                   <td align="center">Password</td>
-                  <td align="center"><input type="password" name="password"/></td>
+                  <td align="center"><input type="password" name="Password"/></td>
                 </tr>
                 <tr class="texto">
                   <td colspan="2" align="center">
@@ -115,7 +115,7 @@
                   </tr>
               </table></td>
               <td width="525" valign="top"><div align="right">
-                      <input name="Button" type="button" class="texto" value="Salir"/>
+                      <input name="Button" type="button" class="texto" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Salir.action'" value="Salir"/>
               </div></td>
             </tr>
         </table></td>

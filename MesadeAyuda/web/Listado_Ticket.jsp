@@ -53,7 +53,7 @@
                                     <td width="800" align="right" valign="bottom"><div class="titulo Estilo6">Listado de Ticket</div></td>
                                 </tr>
                                 <tr class="texto">
-                                    <td width="800" align="right" valign="bottom"><div align="left"><span class="cabecera">Juan Perez Castillo : Mesa de Ayuda - <span class="Estilo7">###</span> NIVEL</span></div></td>
+                                    <td width="800" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2><span class="Estilo7"></span></span></div></td>
                                 </tr>
                             </table></td>
                     </tr>
@@ -69,7 +69,7 @@
                                     <td width="524" valign="middle"><div align="right">
                                             <!--<input name="btnAgregar4" type="button" class="texto" id="btnAgregar4" onclick="javascript:nuevoticket(formulario);" value="Nuevo"/>-->
                                             <input type="submit" value="Nuevo"/>
-                                            <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="javascript:cerrarticket(formulario);" value="Cerrar Sesi&oacute;n"/>
+                                            <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Salir.action'" value="Cerrar Sesi&oacute;n"/>
                                         </div></td>
                                 </tr>
 
@@ -244,7 +244,7 @@
                                             </tr>
                                         </table></td>
                                     <td width="525" valign="top"><div align="right">
-                                            <input name="Button" type="button" class="texto" onclick="javascript:cerrarticket(formulario);" value="Cerrar Sesi&oacute;n"/>
+                                            <input name="Button" type="button" class="texto" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Salir.action'" value="Cerrar Sesi&oacute;n"/>
                                         </div></td>
                                 </tr>
                             </table></td>

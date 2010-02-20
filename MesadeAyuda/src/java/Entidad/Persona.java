@@ -34,7 +34,6 @@ public class Persona {
     // </editor-fold> 
     private int Rol;
 
-
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.5445B9D4-79BD-13B4-C091-B5BA4D2D9478]
     // </editor-fold> 
@@ -135,9 +134,9 @@ public class Persona {
 
     public String logueo() {
 
-       //if (UsuarioId.isEmpty()) {
-            //return "problemas";
-        //}
+        if (UsuarioId == null) {
+            return "problemas";
+        }
         return "todo_bien";
     }
 }

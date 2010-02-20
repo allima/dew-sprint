@@ -5,7 +5,7 @@
 
 <struts>
      <package name="paquete_tickets" namespace="/gestiondeTicket" extends="struts-default">
-        <action name="Login" class="Entidad.Persona" method="logueo">
+        <action name="Login" class="Entidad.LoginAction" method="execute">
             <result name="todo_bien">/Listado_Ticket.jsp</result>
             <result name="problemas">/Login_Ticket.jsp</result>
         </action>
@@ -13,6 +13,16 @@
         <action name="Nuevo" class="Entidad.Ticket" method="nuevoTicket">
             <result name="todo_bien">/Registro_Ticket.jsp</result>
             <result name="problemas">/Login_Ticket.jsp</result>
+        </action>
+
+        <action name="Salir" class="Entidad.SalirAction">
+            <result name="ok">/Login_Ticket.jsp</result>
+            <interceptor-ref name="basicStack"></interceptor-ref>
+        </action>
+
+         <action name="Regresar" class="Entidad.RegresarAction">
+            <result name="ok">/Listado_Ticket.jsp</result>
+            <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
     </package>

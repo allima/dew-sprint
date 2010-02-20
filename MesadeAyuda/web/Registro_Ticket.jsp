@@ -52,7 +52,7 @@
               <td width="821" align="right" valign="bottom"><div class="titulo Estilo6">Registro de Ticket</div></td>
             </tr>
             <tr class="texto">
-              <td width="821" align="right" valign="bottom"><div align="left"><span class="cabecera">Juan Perez<span class="Estilo9"> Castillo : </span>Mesa de Ayuda - PRIMER NIVEL</span></div></td>
+              <td width="821" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2> : </span>Mesa de Ayuda</span></div></td>
             </tr>
         </table></td>
       </tr>
@@ -83,7 +83,7 @@
                     <td bgcolor="#FFFFFF" scope="col"><div align="right">
                       <input name="btnAgregar4" type="button" class="texto" id="btnAgregar4" onclick="javascript:nuevoticket(formulario);" value="Nuevo"/>
                       <input name="btnAgregar3" type="button" class="texto" id="btnAgregar3" onclick="javascript:grabarticket(formulario);"  value="Grabar"/>
-                      <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="javascript:listaticket(formulario);" value="Regresar"/>
+                      <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Regresar.action'" value="Regresar"/>
                       <span class="Estilo7">.                      </span></div></td>
                   </tr>
                   
