@@ -1,4 +1,20 @@
-/* CSS Document */
+
+.Estilo2 {color: #000000; }
+.Estilo5 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.Estilo6 {
+	font-size: 18px
+}
+.Etiqueta{
+	font-size: 20px
+}
+.Etiqueta_user{
+	font-size: 16px;
+        font-weight: bold;
+}
 .comentario{
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 10px;
@@ -22,12 +38,5 @@
 	font-weight:bold;
 }
 .Estilo2{color: #000000; }
-.Estilo5 td{
-	font-size: 36px;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-Estilo6 {
-	font-size: 18px
-}
+.Estilo7 {color: #FF0000}
 
