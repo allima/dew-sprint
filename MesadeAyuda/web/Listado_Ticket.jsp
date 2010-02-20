@@ -1,30 +1,15 @@
-<%@page import="com.mhb.bean.*" %>
-<%@page import="java.util.*" %>
-<%@ page contentType="text/html; charset=iso-8859-1" language="java" errorPage="" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Mantenimiento de Clientes</title>
-        <link rel="stylesheet" type="text/css" href="css/general.css"/>
+        <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/general.css"/>
         <script type="text/javascript" src="javascripts/handler.js"></script>
         <script type="text/javascript" src="javascripts/validacion.js"></script>
-        <style type="text/css">
-            <!--
-            .Estilo2 {color: #000000; }
-            .Estilo5 {
-                font-size: 36px;
-                font-weight: bold;
-                color: #FFFFFF;
-            }
-            .Estilo6 {
-                font-size: 18px
-            }
-            .Estilo7 {color: #FF0000}
-            -->
-        </style>
-    </head>
 
+    </head>
     <body marginheight="0" leftmargin="0" marginwidth="0" rightmargin="0" topmargin="0">
         <center>
             <form action="<%=request.getContextPath()%>/gestiondeTicket/Nuevo.action" method="post">
@@ -50,10 +35,10 @@
                         <td width="800" valign="top"><table width="800" border="0" cellpadding="0" cellspacing="0">
                                 <!--DWLayoutTable-->
                                 <tr>
-                                    <td width="800" align="right" valign="bottom"><div class="titulo Estilo6">Listado de Ticket</div></td>
+                                    <td width="800" align="right" valign="bottom"><div class="Etiqueta">Listado de Ticket</div></td>
                                 </tr>
                                 <tr class="texto">
-                                    <td width="800" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2><span class="Estilo7"></span></span></div></td>
+                                    <td width="800" align="right" valign="bottom"><div align="left"><span class="Etiqueta_user">${sessionScope.USUARIO_ACTUAL.nombres}</span></div></td>
                                 </tr>
                             </table></td>
                     </tr>
@@ -64,11 +49,11 @@
                                     <td height="16" colspan="2" valign="middle"><hr align="center" width="800" /></td>
                                 </tr>
                                 <tr>
-                                    <td width="437" height="16" valign="middle">
+                                    <td width="437" height="16" align="left">
                                         <input name="btnAgregar2" type="button" class="texto" id="btnAgregar2" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Nuevo.action'" value="Mantenimiento"/></td>
                                     <td width="524" valign="middle"><div align="right">
                                             <!--<input name="btnAgregar4" type="button" class="texto" id="btnAgregar4" onclick="javascript:nuevoticket(formulario);" value="Nuevo"/>-->
-                                            <input type="submit" value="Nuevo"/>
+                                            <input name="btnNuevo" type="button" class="texto" id="btnNuevo" value="Nuevo"/>
                                             <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Salir.action'" value="Cerrar Sesi&oacute;n"/>
                                         </div></td>
                                 </tr>
@@ -89,8 +74,8 @@
                                 <tr>
                                     <td colspan="2" valign="top" bordercolor="#F0F0F0" bgcolor="#FFFFFF"><table width="800" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#FFFFFF" class="texto">
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
-                                                <td width="98" align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Ticket</div></td>
-                                                <td width="190" bgcolor="#FFFFFF" scope="col"><label>
+                                                <td width="95" align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Ticket</div></td>
+                                                <td width="195" bgcolor="#FFFFFF" scope="col"><label>
                                                         <input name="ticket" type="text" id="ticket" size="15" />
                                                     </label></td>
                                                 <td width="1" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
@@ -112,16 +97,16 @@
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                                                 <td align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Fecha Registro</div></td>
                                                 <td bgcolor="#FFFFFF" scope="col"><label>
-                                                        <input name="fechainicio" type="text" id="fechainicio" size="10" />
+                                                        <input name="fechainicio" type="text" id="fechainicio" size="8" />
                                                         a
-                                                        <input name="fechafin" type="text" id="fechafin" size="10" />
+                                                        <input name="fechafin" type="text" id="fechafin" size="8" />
                                                     </label></td>
                                                 <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                                 <td bgcolor="#FFFFFF" scope="col">Fecha Cierre</td>
                                                 <td bgcolor="#FFFFFF" scope="col"><label>
-                                                        <input name="feccierreini" type="text" id="feccierreini" size="10" />
+                                                        <input name="feccierreini" type="text" id="feccierreini" size="8" />
                                                         a
-                                                        <input name="fechaciefin" type="text" id="fechaciefin" size="10" />
+                                                        <input name="fechaciefin" type="text" id="fechaciefin" size="8" />
                                                     </label></td>
                                                 <td align="center" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                                 <td bgcolor="#FFFFFF" scope="col">Categoria</td>
@@ -174,10 +159,10 @@
                                                 <td class="texto"><div align="center">Comunicaciones</div></td>
                                                 <td class="texto" align="center">Jose Paredez</td>
                                                 <td align="center" class="texto">Derivado</td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
+                                                <td width="23" class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
                                             </tr>
                                             <tr class="texto">
                                                 <td class="texto" align="center"><input type="checkbox" name="id_check2" id="id_check2" /></td>
@@ -188,10 +173,10 @@
                                                 <td class="texto"><div align="center">Hardware</div></td>
                                                 <td class="texto" align="center">Miguel Carrillo</td>
                                                 <td align="center" class="texto">Cerrado</td>
-                                                <td class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
-                                                <td class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
-                                                <td class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
+                                                <td class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                                                <td class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
+                                                <td class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
                                             </tr>
                                             <tr class="texto">
                                                 <td class="texto" align="center"><input type="checkbox" name="id_check3" id="id_check3" /></td>
@@ -202,10 +187,10 @@
                                                 <td class="texto"><div align="center">Software</div></td>
                                                 <td class="texto" align="center">Jose Paredez</td>
                                                 <td align="center" class="texto">Registrado</td>
-                                                <td class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
-                                                <td class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
-                                                <td class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
+                                                <td class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                                                <td class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
+                                                <td class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
                                             </tr>
                                             <tr class="texto">
                                                 <td class="texto" align="center">&nbsp;</td>
