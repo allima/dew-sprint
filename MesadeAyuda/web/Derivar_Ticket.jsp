@@ -223,7 +223,7 @@
                                             </tr>
                                         </table></td>
                                     <td width="525" valign="top"><div align="right">
-                                            <input name="Button" type="button" class="texto" onclick="javascript:listaticket(formulario);" value="Regresar"/>
+                                            <input name="Button" type="button" class="texto" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Regresar.action'" value="Regresar"/>
                                         </div></td>
                                 </tr>
                             </table></td>

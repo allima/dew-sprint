@@ -79,6 +79,7 @@
                                                         <span class="Estilo7">.</span></div></td>
                                             </tr>
 
+
                                             <tr valign="middle" bgcolor="#FFFFFF" class="cabecera">
                                                 <td colspan="8" align="center" bgcolor="#66CC66" scope="col">&nbsp;</td>
                                             </tr>
@@ -242,7 +243,7 @@
                                             </tr>
                                         </table></td>
                                     <td width="525" valign="top"><div align="right">
-                                            <input name="Button" type="button" class="texto" onclick="javascript:listaticket(formulario);" value="Regresar"/>
+                                            <input name="Button" type="button" class="texto" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Regresar.action'" value="Regresar"/>
                                         </div></td>
                                 </tr>
                             </table></td>
