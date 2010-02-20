@@ -50,9 +50,12 @@ function Consultaticket(form){
 form.action = 'Consulta_Ticket.html';
 form.submit();
 };
-function ConsultaMayudaticket(form){
-form.action = 'Consulta_Mayuda_Ticket.html';
+function ConsultaMayudaticket(form,ruta){
+if (confirm("¿Seguro de consultar el Ticket ")) {
+   
+   form.action = ruta + '/Modificar.action';
 form.submit();
+}
 };
 
 
