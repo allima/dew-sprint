@@ -51,7 +51,7 @@
               <td width="800" align="right" valign="bottom"><div class="titulo Estilo6">Listado de Ticket - Consulta</div></td>
             </tr>
             <tr class="texto">
-              <td width="800" align="right" valign="bottom"><div align="left"><span class="cabecera">Sofia Melendez Cruz : Mesa de Ayuda</span></div></td>
+              <td width="800" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2> : Facturación </span></div></td>
             </tr>
         </table></td>
       </tr>
@@ -62,9 +62,10 @@
             <td height="16" colspan="2" valign="middle"><hr align="center" width="800" /></td>
           </tr>
           <tr>
+
             <td width="437" height="16" valign="middle"><!--DWLayoutEmptyCell-->&nbsp;</td>
             <td width="524" valign="middle"><div align="right">
-              <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="javascript:cerrarticket(formulario);" value="Cerrar Sesi&oacute;n"/>
+              <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Salir.action'" value="Cerrar Sesi&oacute;n"/>
             </div></td>
           </tr>
           
@@ -209,7 +210,7 @@
                   </tr>
               </table></td>
               <td width="525" valign="top"><div align="right">
-                  <input name="Button" type="button" class="texto" onclick="javascript:cerrarticket(formulario);" value="Cerrar Sesi&oacute;n"/>
+                  <input name="Button" type="button" class="texto" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Salir.action'" value="Cerrar Sesi&oacute;n"/>
               </div></td>
             </tr>
         </table></td>

@@ -31,7 +31,7 @@
         <action name="PortalUsuFinal" class="Entidad.PortalUsuFinalAction">
             <result name="ok">/Listado_Ticket_Usuario.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
-            <interceptor-ref name="usuario-mesaayuda"></interceptor-ref>
+            <interceptor-ref name="usuario-usufinal"></interceptor-ref>
         </action>
 
         <action name="Nuevo" class="Entidad.Ticket" method="nuevoTicket">

@@ -4,6 +4,7 @@
  */
 package Entidad;
 
+import java.util.Iterator;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import org.apache.struts2.ServletActionContext;
@@ -16,7 +17,6 @@ public class LoginAction {
 
     private String UsuarioId;
     private String Password;
-
 
     public String getPassword() {
         return Password;
@@ -33,7 +33,6 @@ public class LoginAction {
     public void setUsuarioId(String UsuarioId) {
         this.UsuarioId = UsuarioId;
     }
-
 
     public String execute() {
         System.out.println("Dentro de execute()");
@@ -52,6 +51,8 @@ public class LoginAction {
         u.setNombres("Risky Luna Vega");
         u.setPassword("upc");
         u.setRol(100);
+
+        System.out.println(u.getUsuarioId().indexOf(1));
 
         if (u.getUsuarioId().equals(UsuarioId) && u.getPassword().equals(Password)) {
 
