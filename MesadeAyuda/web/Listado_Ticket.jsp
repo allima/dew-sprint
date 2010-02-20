@@ -6,13 +6,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Mantenimiento de Clientes</title>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/general.css"/>
-        <script type="text/javascript" src="javascripts/handler.js"></script>
+        <script type="text/javascript" src="<%=request.getContextPath()%>/javascripts/handler.js"></script>
         <script type="text/javascript" src="javascripts/validacion.js"></script>
 
     </head>
     <body marginheight="0" leftmargin="0" marginwidth="0" rightmargin="0" topmargin="0">
         <center>
-            <form action="<%=request.getContextPath()%>/gestiondeTicket/Nuevo.action" method="post">
+            <form name="formulario" action="<%=request.getContextPath()%>/gestiondeTicket/Nuevo.action" method="post">
                 <div align="left">
                     <table width="587" border="0"  cellpadding="0" cellspacing="0">
                         <tr>
@@ -159,7 +159,7 @@
                                                 <td class="texto"><div align="center">Comunicaciones</div></td>
                                                 <td class="texto" align="center">Jose Paredez</td>
                                                 <td align="center" class="texto">Derivado</td>
-                                                <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Modificar.action"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario,'<%=request.getContextPath()%>');"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                                                 <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Derivar.action"><img src="<%=request.getContextPath()%>/images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
                                                 <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Cerrar.action"><img src="<%=request.getContextPath()%>/images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
                                                 <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Eliminar.action"><img src="<%=request.getContextPath()%>/images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
