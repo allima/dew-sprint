@@ -5,23 +5,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Mantenimiento de Clientes</title>
-<link rel="stylesheet" type="text/css" href="css/general.css"/>
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/general.css"/>
 <script type="text/javascript" src="javascripts/handler.js"></script>
 <script type="text/javascript" src="javascripts/validacion.js"></script>
-<style type="text/css">
-<!--
-.Estilo5 {
-	font-size: 36px;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-.Estilo6 {
-	font-size: 18px
-}
-.Estilo7 {color: #FFFFFF}
-.Estilo9 {color: #000000}
--->
-</style>
+
 </head>
 
 <body marginheight="0" leftmargin="0" marginwidth="0" rightmargin="0" topmargin="0">
@@ -49,10 +36,10 @@
         <td width="700" valign="top"><table width="800" border="0" cellpadding="0" cellspacing="0">
             <!--DWLayoutTable-->
             <tr>
-              <td width="821" align="right" valign="bottom"><div class="titulo Estilo6">Registro de Ticket</div></td>
+              <td width="821" align="right" valign="bottom"><div class="Etiqueta">Registro de Ticket</div></td>
             </tr>
             <tr class="texto">
-              <td width="821" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2> : </span>Mesa de Ayuda</span></div></td>
+              <td width="821" align="right" valign="bottom"><div align="left"><span class="Etiqueta_user">${sessionScope.USUARIO_ACTUAL.nombres}</span></div></td>
             </tr>
         </table></td>
       </tr>
@@ -119,7 +106,7 @@
                     <td align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Usuario</div></td>
                     <td valign="bottom" bgcolor="#FFFFFF" scope="col"><label>
                       <input name="idusuario" type="text" id="idusuario" size="15" />
-                      <img src="images/listaUsuario.gif" width="20" height="20" /></label></td>
+                      <img src="<%=request.getContextPath()%>/images/listaUsuario.gif" width="20" height="20" /></label></td>
                     <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                     <td bgcolor="#FFFFFF" scope="col">Estado</td>
                     <td bgcolor="#FFFFFF" scope="col"><label>
