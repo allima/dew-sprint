@@ -132,12 +132,5 @@ public class Persona {
         this.Rol = Rol;
     }
 
-    public String logueo() {
-
-        if (UsuarioId == null) {
-            return "problemas";
-        }
-        return "todo_bien";
-    }
 }
 

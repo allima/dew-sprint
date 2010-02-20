@@ -43,8 +43,8 @@ public class LoginAction {
         // Lógica de negocios -> Capa de persistencia
 
         Persona u = new Persona();
-        u.setUsuarioId("rluna");
-        u.setNombres("Risky Luna Vega");
+        u.setUsuarioId("palanya");
+        u.setNombres("Pamela Alanya Sánchez");
         u.setPassword("upc");
         u.setRol(200);
 
