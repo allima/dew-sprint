@@ -159,10 +159,10 @@
                                                 <td class="texto"><div align="center">Comunicaciones</div></td>
                                                 <td class="texto" align="center">Jose Paredez</td>
                                                 <td align="center" class="texto">Derivado</td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Modificar.action"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Derivar.action"><img src="<%=request.getContextPath()%>/images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
+                                                <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Cerrar.action"><img src="<%=request.getContextPath()%>/images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Eliminar.action"><img src="<%=request.getContextPath()%>/images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
                                             </tr>
                                             <tr class="texto">
                                                 <td class="texto" align="center"><input type="checkbox" name="id_check2" id="id_check2" /></td>
@@ -173,10 +173,10 @@
                                                 <td class="texto"><div align="center">Hardware</div></td>
                                                 <td class="texto" align="center">Miguel Carrillo</td>
                                                 <td align="center" class="texto">Cerrado</td>
-                                                <td class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
-                                                <td class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
-                                                <td class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
+                                                <td class="texto" align="center"><a href="<%=request.getContextPath()%>/Modificar.action"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                                                <td class="texto" align="center"><a href="<%=request.getContextPath()%>/Derivar.action"><img src="<%=request.getContextPath()%>/images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
+                                                <td class="texto" align="center"><a href="<%=request.getContextPath()%>/Cerrar.action"><img src="<%=request.getContextPath()%>/images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Eliminar.action"><img src="<%=request.getContextPath()%>/images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
                                             </tr>
                                             <tr class="texto">
                                                 <td class="texto" align="center"><input type="checkbox" name="id_check3" id="id_check3" /></td>
@@ -187,10 +187,10 @@
                                                 <td class="texto"><div align="center">Software</div></td>
                                                 <td class="texto" align="center">Jose Paredez</td>
                                                 <td align="center" class="texto">Registrado</td>
-                                                <td class="texto" align="center"><a href="javascript:ConsultaMayudaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
-                                                <td class="texto" align="center"><a href="javascript:derivarticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
-                                                <td class="texto" align="center"><a href="javascript:cerrar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
-                                                <td width="23" class="texto" align="center"><a href="javascript:Eliminar_Ticket(formulario);"><img src="<%=request.getContextPath()%>/images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
+                                                <td class="texto" align="center"><a href="<%=request.getContextPath()%>/Modificar.action"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                                                <td class="texto" align="center"><a href="<%=request.getContextPath()%>/Derivar.action"><img src="<%=request.getContextPath()%>/images/app_activacion.gif" alt="Derivar" width="17" height="17" longdesc="Derivar" border="0"/></a></td>
+                                                <td class="texto" align="center"><a href="<%=request.getContextPath()%>/Cerrar.action"><img src="<%=request.getContextPath()%>/images/app_activo.gif" alt="Cerrar Ticket" width="20" height="20" border="0" /></a></td>
+                                                <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Eliminar.action"><img src="<%=request.getContextPath()%>/images/eliminar.gif" alt="Eliminar" width="20" height="20" border="0" /></a></td>
                                             </tr>
                                             <tr class="texto">
                                                 <td class="texto" align="center">&nbsp;</td>

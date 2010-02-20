@@ -75,7 +75,7 @@
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                                                 <td colspan="8" align="center" bgcolor="#FFFFFF" scope="col"><div align="right">
                                                         <input name="btnAgregar3" type="button" class="texto" id="btnAgregar3" onclick="javascript:grabarderivacion(formulario);"  value="Grabar"/>
-                                                        <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="javascript:listaticket(formulario);" value="Regresar"/>
+                                                        <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Regresar.action'" value="Regresar"/>
                                                         <span class="Estilo7">.                      </span></div></td>
                                             </tr>
 
