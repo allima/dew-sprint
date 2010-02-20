@@ -9,7 +9,7 @@
 </head>
 
 
-<body>
+<body  marginheight="0" leftmargin="0" marginwidth="0" rightmargin="0" topmargin="0">
     <script type="text/javascript" src="javascripts/handler.js"></script>
     <script type="text/javascript" src="javascripts/validacion.js"></script>
 <center>
@@ -29,7 +29,7 @@
       </table>
     </div>
     <br /><br />
-    
+
     <table width="800" border="0" cellpadding="0" cellspacing="0">
       <!--DWLayoutTable-->
       <tr>
@@ -45,7 +45,7 @@
       </tr>
       <tr>
         <td height="25" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
-         
+
           <tr>
             <td width="800" height="16" valign="middle"><hr align="center" width="800" /></td>
           </tr>
@@ -59,7 +59,7 @@
       <tr>
         <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
             <!--DWLayoutTable-->
-            
+
             <tr class="cabecera">
               <td width="1600" height="2" colspan="2" valign="top"><hr align="center" width="800" /></td>
             </tr>
@@ -92,7 +92,7 @@
               </table>
               </td>
             </tr>
-            
+
             <tr>
               <td colspan="2" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
             </tr>
