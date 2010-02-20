@@ -9,6 +9,7 @@
 
         <interceptors>
             <interceptor name="usuario-mesaayuda" class="interceptores.UsuarioMesaAyudaInterceptor" />
+            <interceptor name="usuario-usufinal" class="interceptores.UsuarioFiinalInterceptor" />
         </interceptors>
 
         <global-results>
@@ -23,6 +24,12 @@
 
         <action name="PortalMesaAyuda" class="Entidad.PortalMesaAyudaAction">
             <result name="ok">/Listado_Ticket.jsp</result>
+            <interceptor-ref name="basicStack"></interceptor-ref>
+            <interceptor-ref name="usuario-mesaayuda"></interceptor-ref>
+        </action>
+
+        <action name="PortalUsuFinal" class="Entidad.PortalUsuFinalAction">
+            <result name="ok">/Listado_Ticket_Usuario.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
             <interceptor-ref name="usuario-mesaayuda"></interceptor-ref>
         </action>

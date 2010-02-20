@@ -16,18 +16,22 @@
     <body>
         Bienvenido: ${sessionScope.USUARIO_ACTUAL.nombres}
 
-         <br/>
-          <br/>
-          
+        <br/>
+        <br/>
+
         <a href="<%=request.getContextPath()%>/PortalMesaAyuda.action">
             Opciones del Usuario de mesa de Ayuda</a>
 
         <br/>
-
-        <!--<br/>
+        <br/>
+        <br/>
 
         <a href="<%=request.getContextPath()%>/PortalUsuFinal.action">
             Opciones de Usuario Final</a>
+
+        <!--<br/>
+
+
 
         <br/>
 

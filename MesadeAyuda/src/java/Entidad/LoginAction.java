@@ -48,6 +48,11 @@ public class LoginAction {
         u.setPassword("upc");
         u.setRol(200);
 
+        u.setUsuarioId("rluna");
+        u.setNombres("Risky Luna Vega");
+        u.setPassword("upc");
+        u.setRol(100);
+
         if (u.getUsuarioId().equals(UsuarioId) && u.getPassword().equals(Password)) {
 
             HttpServletRequest request = ServletActionContext.getRequest();
