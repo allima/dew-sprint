@@ -5,7 +5,7 @@
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Mantenimiento de Clientes</title>
-        <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/general.css"/>
         <script type="text/javascript" src="javascripts/handler.js"></script>
         <script type="text/javascript" src="javascripts/validacion.js"></script>
 
@@ -53,8 +53,8 @@
                                         <input name="btnAgregar2" type="button" class="texto" id="btnAgregar2" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Nuevo.action'" value="Mantenimiento"/></td>
                                     <td width="524" valign="middle"><div align="right">
                                             <!--<input name="btnAgregar4" type="button" class="texto" id="btnAgregar4" onclick="javascript:nuevoticket(formulario);" value="Nuevo"/>-->
-                                            <input name="btnNuevo" type="button" class="texto" id="btnNuevo" value="Nuevo"/>
-                                            <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Salir.action'" value="Cerrar Sesi&oacute;n"/>
+                                            <input class="texto" type="submit" value="Nuevo"/>
+                                               <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Salir.action'" value="Cerrar Sesi&oacute;n"/>
                                         </div></td>
                                 </tr>
 
