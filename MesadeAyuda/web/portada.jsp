@@ -42,12 +42,12 @@
               <tr><td width="50%" align="center">
 
           <table border="0">
-           <tr><td align="center"><a href="<%=request.getContextPath()%>/PortalMesaAyuda.action"> <img src="<%=request.getContextPath()%>/images/ayuda.jpg" border="0"></a></td></tr>
+           <tr><td align="center"><a href="<%=request.getContextPath()%>/PortalMesaAyuda.action"> <img src="<%=request.getContextPath()%>/images/ayuda.jpg" width="200" heigth="200" border="0"></a></td></tr>
            <tr><td align="center"><a href="<%=request.getContextPath()%>/PortalMesaAyuda.action"> Opciones del Usuario de mesa de Ayuda</a></td>              </tr>
           </table>
           </td>
           <td> <table border="0">
-           <tr><td align="center"><a href="<%=request.getContextPath()%>/PortalUsuFinal.action"> <img src="<%=request.getContextPath()%>/images/ayuda.jpg" border="0"></a></td></tr>
+           <tr><td align="center"><a href="<%=request.getContextPath()%>/PortalUsuFinal.action"> <img src="<%=request.getContextPath()%>/images/ayuda2.jpg"  width=185" heigth="185" border="0"></a></td></tr>
            <tr><td align="center"><a href="<%=request.getContextPath()%>/PortalUsuFinal.action"> Opciones de Usuario Final</a></td>              </tr>
           </table>
 
