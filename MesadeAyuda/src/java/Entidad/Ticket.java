@@ -364,4 +364,8 @@ public class Ticket {
 
        return "todo_bien";
    }
+   public String consultarTicket(){
+
+       return "todo_bien";
+   }
 }

@@ -55,6 +55,11 @@
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
+        <action name="Consultar" class="Entidad.Ticket" method="consultarTicket">
+            <result name="todo_bien">/Consulta_Ticket.jsp</result>
+            <interceptor-ref name="basicStack"></interceptor-ref>
+        </action>
+
         <action name="Eliminar" class="Entidad.Ticket" method="eliminarTicket">
             <result name="todo_bien">/Listado_Ticket.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
