@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Mantenimiento de Clientes</title>
-<link rel="stylesheet" type="text/css" href="css/general.css"/>
-<script type="text/javascript" src="javascripts/handler.js"></script>
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/general.css"/>
+<script type="text/javascript" src="<%=request.getContextPath()%>/javascripts/handler.js"></script>
 <script type="text/javascript" src="javascripts/validacion.js"></script>
 <style type="text/css">
 <!--
@@ -51,7 +51,7 @@
               <td width="800" align="right" valign="bottom"><div class="titulo Estilo6">Listado de Ticket - Consulta</div></td>
             </tr>
             <tr class="texto">
-              <td width="800" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2> : Facturación  </span></div></td>
+              <td width="800" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2> : Facturación <h2>${sessionScope.USUARIO}</h2> </span></div></td>
             </tr>
         </table></td>
       </tr>
@@ -152,7 +152,7 @@
                     <td class="texto"><div align="center">Comunicaciones</div></td>
                     <td class="texto" align="center">Jose Paredez</td>
                     <td align="center" class="texto">Derivado</td>
-                    <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Consultar.action"><img src="images/mod.gif" alt="Consultar" width="20" height="20" border="0" /></a></td>
+                    <td width="23" class="texto" align="center"><a href="javascript:Consultaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                   </tr>
                   <tr class="texto">
                     <td class="texto" align="center"><input type="checkbox" name="id_check2" id="id_check2" /></td>
@@ -163,7 +163,7 @@
                     <td class="texto"><div align="center">Hardware</div></td>
                     <td class="texto" align="center">Miguel Carrillo</td>
                     <td align="center" class="texto">Cerrado</td>
-                    <td class="texto"><a href="javascript:Consultaticket(formulario);"><img src="images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                    <td class="texto"><a href="javascript:Consultaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                   </tr>
                   <tr class="texto">
                     <td class="texto" align="center"><input type="checkbox" name="id_check3" id="id_check3" /></td>
@@ -174,7 +174,7 @@
                     <td class="texto"><div align="center">Software</div></td>
                     <td class="texto" align="center">Jose Paredez</td>
                     <td align="center" class="texto">Registrado</td>
-                    <td class="texto"><a href="javascript:Consultaticket(formulario);"><img src="images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                    <td class="texto"><a href="javascript:Consultaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                   </tr>
                   <tr class="texto">
                     <td class="texto" align="center">&nbsp;</td>
