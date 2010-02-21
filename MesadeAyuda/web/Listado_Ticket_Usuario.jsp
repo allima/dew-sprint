@@ -152,7 +152,7 @@
                     <td class="texto"><div align="center">Comunicaciones</div></td>
                     <td class="texto" align="center">Jose Paredez</td>
                     <td align="center" class="texto">Derivado</td>
-                    <td width="23" class="texto" align="center"><a href="javascript:Consultaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                    <td width="23" class="texto" align="center"><a href="<%=request.getContextPath()%>/Consultar.action"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                   </tr>
                   <tr class="texto">
                     <td class="texto" align="center"><input type="checkbox" name="id_check2" id="id_check2" /></td>
