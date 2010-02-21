@@ -53,7 +53,7 @@
                                     <td width="821" align="right" valign="bottom"><div class="titulo Estilo6">Consulta de Ticket</div></td>
                                 </tr>
                                 <tr class="texto">
-                                    <td width="821" align="right" valign="bottom"><div align="left"><span class="cabecera">Sofia Melendez Cruz : Mesa de Ayuda</span></div></td>
+                                    <td width="821" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2> : Facturación</span></div></td>
                                 </tr>
                             </table></td>
                     </tr>

@@ -75,7 +75,10 @@
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
-
+        <action name="RegresarUF" class="Entidad.RegresarAction">
+            <result name="ok">/Listado_Ticket_Usuario.jsp</result>
+            <interceptor-ref name="basicStack"></interceptor-ref>
+        </action>
 
     </package>
 </struts>
