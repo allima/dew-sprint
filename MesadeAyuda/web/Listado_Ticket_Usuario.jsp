@@ -51,7 +51,7 @@
               <td width="800" align="right" valign="bottom"><div class="titulo Estilo6">Listado de Ticket - Consulta</div></td>
             </tr>
             <tr class="texto">
-              <td width="800" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2> : Facturación </span></div></td>
+              <td width="800" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2> : Facturación <h2>${sessionScope.USUARIO}</h2> </span></div></td>
             </tr>
         </table></td>
       </tr>

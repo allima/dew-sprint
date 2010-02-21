@@ -52,7 +52,6 @@ public class LoginAction {
         u.setPassword("upc");
         u.setRol(100);
 
-        System.out.println(u.getUsuarioId().indexOf(1));
 
         if (u.getUsuarioId().equals(UsuarioId) && u.getPassword().equals(Password)) {
 
