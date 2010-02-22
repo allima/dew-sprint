@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Mantenimiento de Clientes</title>
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/general.css"/>
-<script type="text/javascript" src="javascripts/handler.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/javascripts/handler.js"></script>
 <script type="text/javascript" src="javascripts/validacion.js"></script>
 
 </head>
