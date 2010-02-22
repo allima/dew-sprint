@@ -78,11 +78,11 @@
                 </tr>
                 <tr class="texto">
                   <td align="center">Usuario:</td>
-                  <td align="center"><input type="text" name="_UsuarioId"/></td>
+                  <td align="center"><input type="text" name="UsuarioId"/></td>
                 </tr>
                 <tr class="texto">
                   <td align="center">Password</td>
-                  <td align="center"><input type="password" name="_Password"/></td>
+                  <td align="center"><input type="password" name="Password"/></td>
                 </tr>
                 <tr class="texto">
                   <td colspan="2" align="center">
