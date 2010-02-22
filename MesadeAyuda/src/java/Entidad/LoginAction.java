@@ -15,29 +15,29 @@ import org.apache.struts2.ServletActionContext;
  */
 public class LoginAction {
 
-    private String UsuarioId;
-    private String Password;
+    private String _UsuarioId;
+    private String _Password;
 
     public String getPassword() {
-        return Password;
+        return _Password;
     }
 
     public void setPassword(String Password) {
-        this.Password = Password;
+        this._Password = Password;
     }
 
     public String getUsuarioId() {
-        return UsuarioId;
+        return _UsuarioId;
     }
 
     public void setUsuarioId(String UsuarioId) {
-        this.UsuarioId = UsuarioId;
+        this._UsuarioId = UsuarioId;
     }
 
     public String execute() {
         System.out.println("Dentro de execute()");
-        System.out.println(UsuarioId);
-        System.out.println(Password);
+        System.out.println(_UsuarioId);
+        System.out.println(_Password);
 
         // Lógica de negocios -> Capa de persistencia
 
@@ -53,7 +53,7 @@ public class LoginAction {
         u.setRol(100);
 
 
-        if (u.getUsuarioId().equals(UsuarioId) && u.getPassword().equals(Password)) {
+        if (u.getUsuarioId().equals(_UsuarioId) && u.getPassword().equals(_Password)) {
 
             HttpServletRequest request = ServletActionContext.getRequest();
             HttpSession session = request.getSession();
