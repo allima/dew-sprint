@@ -74,7 +74,13 @@ function CerrarTicket(form,ruta){
     }
 };
 
+function EliminarTicket(form,ruta){
+    if (confirm("¿Seguro que desea eliminar el Ticket ")) {
 
+        form.action = ruta + '/Eliminar.action';
+        form.submit();
+    }
+};
 
 function listausuarioticket(form){
     form.action = 'Listado_Ticket_Usuario.html';
