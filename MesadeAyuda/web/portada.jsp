@@ -50,6 +50,10 @@
            <tr><td align="center"><a href="<%=request.getContextPath()%>/PortalUsuFinal.action"> <img src="<%=request.getContextPath()%>/images/ayuda.jpg"  width=185" heigth="185" border="0"></a></td></tr>
            <tr><td align="center"><a href="<%=request.getContextPath()%>/PortalUsuFinal.action"> Opciones de Usuario Final</a></td>              </tr>
           </table>
+           <td> <table border="0">
+           <tr><td align="center"><a href="<%=request.getContextPath()%>/PortalAdmin.action"> <img src="<%=request.getContextPath()%>/images/Usu_Admi1.jpg"  width=185" heigth="185" border="0"></a></td></tr>
+           <tr><td align="center"><a href="<%=request.getContextPath()%>/PortalAdmin.action"> Opciones de Administrador</a></td>              </tr>
+          </table>
 
           </td></tr>
           </table>
