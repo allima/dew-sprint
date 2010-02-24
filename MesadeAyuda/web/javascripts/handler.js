@@ -74,7 +74,7 @@ function CerrarTicket(form,ruta){
     }
 };
 
-function EliminarTicket(form,ruta){
+function Eliminarticket(form,ruta){
     if (confirm("¿Seguro que desea eliminar el Ticket ")) {
 
         form.action = ruta + '/Eliminar.action';
