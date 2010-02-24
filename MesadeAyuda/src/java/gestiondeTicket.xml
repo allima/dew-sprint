@@ -40,6 +40,12 @@
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
+        <action name="NuevoGra" class="Entidad.TicketAction" method="nuevoTicketGra">
+            <result name="todo_bien">/Listado_Ticket.jsp</result>
+            <interceptor-ref name="basicStack"></interceptor-ref>
+        </action>
+
+
         <action name="ConsultarMA" class="Entidad.TicketAction" method="modificarTicket">
             <result name="todo_bien">/Consulta_Mayuda_Ticket.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>

@@ -30,6 +30,15 @@ public class TicketAction {
     private String Urgencia;
     private String impacto;
     private String Prioridad;
+    private String Estado;
+
+    public String getEstado() {
+        return Estado;
+    }
+
+    public void setEstado(String Estado) {
+        this.Estado = Estado;
+    }
 
     public String getCategoria() {
         return Categoria;
@@ -176,6 +185,24 @@ public class TicketAction {
     }
 
     public String nuevoTicket() {
+
+        return "todo_bien";
+    }
+
+    public String nuevoTicketGra() {
+        System.out.println("Se registro un nuevo ticket con los siguientes datos:");
+
+        System.out.println("Número de Ticket :"+NumeroTicket);
+        System.out.println("Usuario :"+Unnamed);
+        System.out.println("Estado :"+Estado);
+        System.out.println("Fecha de Creación :"+FechaCreacion);
+        System.out.println("Categoría :"+Categoria);
+        System.out.println("Tipo de producto :"+TipoProducto);
+        System.out.println("Tipo de problema :"+Tipoproblema);
+        System.out.println("Descripción del problema :"+Descripcion);
+        System.out.println("Observaciones :"+Observaciones);
+        System.out.println("Impacto :"+impacto);
+        System.out.println("Prioridad :"+Prioridad);
 
         return "todo_bien";
     }

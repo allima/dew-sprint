@@ -74,6 +74,15 @@ function CerrarTicket(form,ruta){
     }
 };
 
+function Grabarticket(form,ruta){
+    if (confirm("¿Seguro de agregar el registro")) {
+
+        form.action = ruta + '/NuevoGra.action';
+        form.submit();
+    }
+};
+
+
 function Eliminarticket(form,ruta){
     if (confirm("¿Seguro que desea eliminar el Ticket ")) {
 

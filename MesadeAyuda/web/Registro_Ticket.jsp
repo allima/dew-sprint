@@ -13,7 +13,7 @@
 
 <body marginheight="0" leftmargin="0" marginwidth="0" rightmargin="0" topmargin="0">
 <center>
-  <form name="formulario" method="post" action="Ir?a=mantenimiento_applet">
+  <form name="formulario" method="post" action="">
     <div align="left">
       <table width="587" border="0"  cellpadding="0" cellspacing="0">
         <tr>
@@ -69,7 +69,7 @@
                     <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                     <td bgcolor="#FFFFFF" scope="col"><div align="right">
                       <input name="btnAgregar4" type="button" class="texto" id="btnAgregar4" onclick="javascript:nuevoticket(formulario);" value="Nuevo"/>
-                      <input name="btnAgregar3" type="button" class="texto" id="btnAgregar3" onclick="javascript:grabarticket(formulario);"  value="Grabar"/>
+                      <input name="btnAgregar3" type="button" class="texto" id="btnAgregar3" onclick="javascript:Grabarticket(formulario);"  value="Grabar"/>
                       <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Regresar.action'" value="Regresar"/>
                       <span class="Estilo7">.                      </span></div></td>
                   </tr>
@@ -90,7 +90,7 @@
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                     <td width="74" align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Ticket</div></td>
                     <td width="147" bgcolor="#FFFFFF" scope="col"><label>
-                      <input name="idticket" type="text" id="idticket" size="15" />
+                      <input name="NumeroTicket" type="text" id="idticket" size="15" />
                     </label></td>
                     <td width="13" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                     <td width="52" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
@@ -105,21 +105,19 @@
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                     <td align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Usuario</div></td>
                     <td valign="bottom" bgcolor="#FFFFFF" scope="col"><label>
-                      <input name="idusuario" type="text" id="idusuario" size="15" />
+                      <input name="Unnamed" type="text" id="idusuario" size="15" />
                       <img src="<%=request.getContextPath()%>/images/listaUsuario.gif" width="20" height="20" /></label></td>
                     <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                     <td bgcolor="#FFFFFF" scope="col">Estado</td>
                     <td bgcolor="#FFFFFF" scope="col"><label>
-                      <select name="idestado" id="idestado">
+                      <select name="Estado" id="idestado">
                         <option>Registrado</option>
                       </select>
                     </label></td>
                     <td align="center" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                     <td bgcolor="#FFFFFF" scope="col">Fecha Creaci&oacute;n</td>
                     <td bgcolor="#FFFFFF" scope="col"><label>
-                      <input name="idfecini" type="text" id="idfecini" size="10" />
-                    a
-                    <input name="idfecfin" type="text" id="idfecfin" size="10" />
+                      <input name="FechaCreacion" type="text" id="idfecini" size="10" />
                     </label></td>
                   </tr>
                   <tr valign="middle" bgcolor="#FFFFFF" class="cabecera">
@@ -127,7 +125,7 @@
                   </tr>
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                     <td align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Categoria</div></td>
-                    <td bgcolor="#FFFFFF" scope="col"><select name="prioridad" id="prioridad">
+                    <td bgcolor="#FFFFFF" scope="col"><select name="Categoria" id="prioridad">
                       <option>Hardware</option>
                       <option>Software</option>
                       <option>Comunicaciones</option>
@@ -135,16 +133,23 @@
                     <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                     <td bgcolor="#FFFFFF" scope="col">T. Producto</td>
                     <td bgcolor="#FFFFFF" scope="col"><label>
-                      <select name="idproducto" id="idproducto">
-                        <option>Producto </option>
-                                            </select>
+                      <select name="TipoProducto" id="idproducto">
+                        <option>Impresora </option>
+                        <option>NoteBook </option>
+                        <option>Pc Escritorio </option>
+                        <option>Sistema Operativo </option>
+                        <option>Correo </option>
+                      </select>
                     </label></td>
                     <td align="center" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                     <td bgcolor="#FFFFFF" scope="col">Tipo Problema</td>
                     <td bgcolor="#FFFFFF" scope="col"><label>
-                      <select name="idproblema" id="idproblema">
+                      <select name="Tipoproblema" id="idproblema">
                         <option>Lista de Problemas</option>
-                                            </select>
+                        <option>No enciende</option>
+                        <option>Ho hay acceso</option>
+                        <option>No carga</option>
+                      </select>
                     </label></td>
                   </tr>
                   <tr valign="middle" bgcolor="#FFFFFF" class="cabecera">
@@ -152,7 +157,7 @@
                   </tr>
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                     <td align="center" valign="top" bgcolor="#FFFFFF" scope="col"><div align="left">Descripci&oacute;n</div></td>
-                    <td colspan="6" bgcolor="#FFFFFF" scope="col"><textarea name="iddescripcion" id="iddescripcion" cols="50" rows="5"></textarea></td>
+                    <td colspan="6" bgcolor="#FFFFFF" scope="col"><textarea name="Descripcion" id="iddescripcion" cols="50" rows="5"></textarea></td>
                     <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                   </tr>
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
@@ -160,7 +165,7 @@
                   </tr>
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                     <td align="center" valign="top" bgcolor="#FFFFFF" scope="col"><div align="left">Observaci&oacute;n</div></td>
-                    <td colspan="6" bgcolor="#FFFFFF" scope="col"><textarea name="idobservacion" id="idobservacion" cols="50" rows="5"></textarea></td>
+                    <td colspan="6" bgcolor="#FFFFFF" scope="col"><textarea name="Observaciones" id="idobservacion" cols="50" rows="5"></textarea></td>
                     <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                   </tr>
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
@@ -169,14 +174,17 @@
                   <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                     <td align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Impacto</div></td>
                     <td bgcolor="#FFFFFF" scope="col"><label>
-                      <select name="idimpacto" id="idimpacto">
+                      <select name="impacto" id="idimpacto">
                         <option>Lista de Impacto</option>
-                                            </select>
+                        <option>Usuario</option>
+                        <option>Area</option>
+                        <option>Empresa</option>
+                      </select>
                     </label></td>
                     <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                     <td bgcolor="#FFFFFF" scope="col">Prioridad</td>
                     <td bgcolor="#FFFFFF" scope="col"><label>
-                      <input name="idprioridad" type="text" id="idprioridad" size="10" />
+                      <input name="Prioridad" type="text" id="idprioridad" size="10" />
                     </label></td>
                     <td align="center" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                     <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
@@ -200,7 +208,7 @@
             <!--DWLayoutTable-->
             
             <tr>
-              <td colspan="2" valign="top" bgcolor="#FFFFFF"><input type="text" name="textfield" id="textfield" /></td>
+              <td colspan="2" valign="top" bgcolor="#FFFFFF"></td>
             </tr>
             <tr>
               <td valign="top"><table width="580" border="0" align="left" cellpadding="0" cellspacing="0" class="texto">
