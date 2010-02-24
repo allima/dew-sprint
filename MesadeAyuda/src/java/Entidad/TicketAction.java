@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Entidad;
 
 import java.util.Date;
@@ -12,7 +11,8 @@ import java.util.Date;
  * @author Charly
  */
 public class TicketAction {
-    private int NumeroTicket;
+
+    private String NumeroTicket;
     private String Descripcion;
     private String Unnamed;
     private String Observaciones;
@@ -25,8 +25,8 @@ public class TicketAction {
     private String UsuarioCierre;
     private String Solucion;
     private String Categoria;
-    private int TipoProducto;
-    private int Tipoproblema;
+    private String TipoProducto;
+    private String Tipoproblema;
     private String Urgencia;
     private String impacto;
     private String Prioridad;
@@ -87,11 +87,11 @@ public class TicketAction {
         this.Historial = Historial;
     }
 
-    public int getNumeroTicket() {
+    public String getNumeroTicket() {
         return NumeroTicket;
     }
 
-    public void setNumeroTicket(int NumeroTicket) {
+    public void setNumeroTicket(String NumeroTicket) {
         this.NumeroTicket = NumeroTicket;
     }
 
@@ -119,19 +119,19 @@ public class TicketAction {
         this.Solucion = Solucion;
     }
 
-    public int getTipoProducto() {
+    public String getTipoProducto() {
         return TipoProducto;
     }
 
-    public void setTipoProducto(int TipoProducto) {
+    public void setTipoProducto(String TipoProducto) {
         this.TipoProducto = TipoProducto;
     }
 
-    public int getTipoproblema() {
+    public String getTipoproblema() {
         return Tipoproblema;
     }
 
-    public void setTipoproblema(int Tipoproblema) {
+    public void setTipoproblema(String Tipoproblema) {
         this.Tipoproblema = Tipoproblema;
     }
 
@@ -175,29 +175,34 @@ public class TicketAction {
         this.impacto = impacto;
     }
 
-    public String nuevoTicket(){
+    public String nuevoTicket() {
 
-       return "todo_bien";
-   }
+        return "todo_bien";
+    }
 
-  public String modificarTicket(){
+    public String modificarTicket() {
 
-       return "todo_bien";
-   }
-  public String derivarTicket(){
-       System.out.println("Derivando Ticket al grupo: "+GrupoAsignacion+", con el usuario :"+EspecialistaAsignado);
-       return "todo_bien";
-   }
-  public String cerrarTicket(){
+        return "todo_bien";
+    }
 
-       return "todo_bien";
-   }
-  public String eliminarTicket(){
+    public String derivarTicket() {
+        System.out.println("Derivando Ticket al grupo: " + GrupoAsignacion + ", con el usuario :" + EspecialistaAsignado);
+        return "todo_bien";
+    }
 
-       return "todo_bien";
-   }
-   public String consultarTicket(){
+    public String cerrarTicket() {
+        System.out.println("La solución brindada fue sobre : " + Solucion);
+        System.out.println("Descripción de la solución : " + Descripcion);
+        return "todo_bien";
+    }
 
-       return "todo_bien";
-   }
+    public String eliminarTicket() {
+
+        return "todo_bien";
+    }
+
+    public String consultarTicket() {
+
+        return "todo_bien";
+    }
 }

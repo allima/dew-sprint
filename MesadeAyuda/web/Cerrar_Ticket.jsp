@@ -26,7 +26,7 @@
 
     <body marginheight="0" leftmargin="0" marginwidth="0" rightmargin="0" topmargin="0">
         <center>
-            <form name="formulario" method="post" action="Ir?a=mantenimiento_applet">
+            <form name="formulario" method="post" action="">
                 <div align="left">
                     <table width="587" border="0"  cellpadding="0" cellspacing="0">
                         <tr>
@@ -74,7 +74,7 @@
                                     <td colspan="2" valign="top" bordercolor="#F0F0F0" bgcolor="#FFFFFF"><table width="768" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#FFFFFF" class="texto">
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                                                 <td colspan="8" align="center" bgcolor="#FFFFFF" scope="col"><div align="right">
-                                                        <input name="btnAgregar3" type="button" class="texto" id="btnAgregar3" onclick="javascript:grabarcierre(formulario);"  value="Grabar"/>
+                                                        <input name="btnAgregar3" type="button" class="texto" id="btnAgregar3" onclick="javascript:CerrarTicket(formulario,'<%=request.getContextPath()%>');"  value="Grabar"/>
                                                         <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Regresar.action'" value="Regresar"/>
                                                         <span class="Estilo7">.</span></div></td>
                                             </tr>
@@ -154,7 +154,7 @@
                                                         <tr>
                                                             <td class="cabecera">Solución</td>
                                                             <td>&nbsp;</td>
-                                                            <td bgcolor="#FFFFFF" class="comentario"><select name="idsolucion" class="texto" id="idsolucion">
+                                                            <td bgcolor="#FFFFFF" class="comentario"><select name="Solucion" class="texto" id="idsolucion">
                                                                     <option>Seleccione Solución</option>
                                                                     <option>Incidencia de usuario</option>
                                                                     <option>Red</option>
@@ -181,7 +181,7 @@
                                                         </tr>
                                                         <tr>
 
-                                                            <td  bgcolor="#FFFFFF" class="comentario"><textarea name="iddessolucion" id="iddessolucion" cols="35" rows="5"></textarea>&nbsp;&nbsp;<span class="texto Estilo9"> (*)</span></td>
+                                                            <td  bgcolor="#FFFFFF" class="comentario"><textarea name="Descripcion" id="iddessolucion" cols="35" rows="5"></textarea>&nbsp;&nbsp;<span class="texto Estilo9"> (*)</span></td>
                                                             <td><label><span class="texto Estilo9">                </span></label></td>
                                                         </tr>
                                                     </table></td>

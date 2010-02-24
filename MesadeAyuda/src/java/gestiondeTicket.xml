@@ -55,8 +55,13 @@
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
-        <action name="Cerrar" class="Entidad.TicketAction" method="cerrarTicket">
+        <action name="CerrarCon" class="Entidad.TicketAction" method="consultarTicket">
             <result name="todo_bien">/Cerrar_Ticket.jsp</result>
+            <interceptor-ref name="basicStack"></interceptor-ref>
+        </action>
+
+        <action name="CerrarGra" class="Entidad.TicketAction" method="cerrarTicket">
+            <result name="todo_bien">/Listado_Ticket.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
