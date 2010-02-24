@@ -49,7 +49,7 @@
         <td width="700" valign="top"><table width="800" border="0" cellpadding="0" cellspacing="0">
             <!--DWLayoutTable-->
             <tr>
-              <td width="821" align="right" valign="bottom"><div class="titulo Estilo6">Modificar Ticket</div></td>
+              <td width="821" align="right" valign="bottom"><div class="titulo Estilo6">Consultar Ticket</div></td>
             </tr>
             <tr class="texto">
               <td width="821" align="right" valign="bottom"><div align="left"><span class="cabecera"><h2>${sessionScope.USUARIO_ACTUAL.nombres}</h2> : Mesa de Ayuda</span></div></td>

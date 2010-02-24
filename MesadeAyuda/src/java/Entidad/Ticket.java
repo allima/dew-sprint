@@ -343,29 +343,5 @@ public class Ticket {
         this.impacto = val;
     }
 
-   public String nuevoTicket(){
-
-       return "todo_bien";
-   }
-
-  public String modificarTicket(){
-
-       return "todo_bien";
-   }
-  public String derivarTicket(){
-
-       return "todo_bien";
-   }
-  public String cerrarTicket(){
-
-       return "todo_bien";
-   }
-  public String eliminarTicket(){
-
-       return "todo_bien";
-   }
-   public String consultarTicket(){
-
-       return "todo_bien";
-   }
+   
 }

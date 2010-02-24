@@ -58,6 +58,14 @@ form.submit();
 }
 };
 
+function DerivarTicket(form,ruta){
+if (confirm("¿Seguro de grabar y derivar el Ticket ")) {
+
+   form.action = ruta + '/DerivarGra.action';
+form.submit();
+}
+};
+
 
 function listausuarioticket(form){
 form.action = 'Listado_Ticket_Usuario.html';

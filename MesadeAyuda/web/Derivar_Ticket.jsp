@@ -26,7 +26,7 @@
 
     <body marginheight="0" leftmargin="0" marginwidth="0" rightmargin="0" topmargin="0">
         <center>
-            <form name="formulario" method="post" action="Ir?a=mantenimiento_applet">
+            <form name="formulario" method="post" action="">
                 <div align="left">
                     <table width="587" border="0"  cellpadding="0" cellspacing="0">
                         <tr>
@@ -74,7 +74,7 @@
                                     <td colspan="2" valign="top" bordercolor="#F0F0F0" bgcolor="#FFFFFF"><table width="768" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#FFFFFF" class="texto">
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                                                 <td colspan="8" align="center" bgcolor="#FFFFFF" scope="col"><div align="right">
-                                                        <input name="btnAgregar3" type="button" class="texto" id="btnAgregar3" onclick="javascript:grabarderivacion(formulario);"  value="Grabar"/>
+                                                        <input name="btnAgregar3" type="button" class="texto" id="btnAgregar3" onclick="javascript:DerivarTicket(formulario,'<%=request.getContextPath()%>');"  value="Grabar"/>
                                                         <input name="btnAgregar" type="button" class="texto" id="btnAgregar" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Regresar.action'" value="Regresar"/>
                                                         <span class="Estilo7">.                      </span></div></td>
                                             </tr>
@@ -91,7 +91,8 @@
                                             </tr>
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                                                 <td width="78" align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Ticket</div></td>
-                                                <td width="189" bgcolor="#FFFFFF" scope="col"><label>MA000001</label></td>
+                                                <td width="189" bgcolor="#FFFFFF" scope="col">
+                                            <input name="NumeroTicket" type="text" class="texto" value="MA000001" readonly="true" />
                                                 <td width="2" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                                 <td colspan="5" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                             </tr>
@@ -100,34 +101,45 @@
                                             </tr>
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                                                 <td align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Usuario</div></td>
-                                                <td valign="bottom" bgcolor="#FFFFFF" class="comentario" scope="col"><label>Sofia Melendez Cruz</label>                    </td>
+                                                <td valign="bottom" bgcolor="#FFFFFF" class="comentario" scope="col">
+                                                	<input name="Unnamed" type="text" class="texto" value="Sofia Melendez Cruz" readonly="true" />                    
+                                               	</td>
                                                 <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                                 <td width="82" bgcolor="#FFFFFF" scope="col">Estado</td>
-                                                <td width="56" bgcolor="#FFFFFF" scope="col"><label>
-                                                        <span class="Estilo9">Derivado                    </span></label></td>
+                                                <td width="56" bgcolor="#FFFFFF" scope="col">
+                                                    <input name="estadoTicket" type="text"  value="Derivado" readonly="true" />
+                                                </td>
                                                 <td width="5" align="center" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                                 <td width="105" bgcolor="#FFFFFF" scope="col">Fecha Creaci&oacute;n</td>
-                                                <td width="269" bgcolor="#FFFFFF" class="comentario" scope="col"><label>07/01/2010</label></td>
+                                                <td width="269" bgcolor="#FFFFFF" class="comentario" scope="col">
+                                                	<input name="class=&quot;texto&quot;" type="text" class="texto" value="24/02/2010" readonly="true" />
+                                                </td>
                                             </tr>
                                             <tr valign="middle" bgcolor="#FFFFFF" class="cabecera">
                                                 <td colspan="8" align="center" scope="col"><hr align="left" width="800" /></td>
                                             </tr>
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                                                 <td align="center" bgcolor="#FFFFFF" scope="col"><div align="left">Categoria</div></td>
-                                                <td bgcolor="#FFFFFF" class="comentario" scope="col">Comunicaci&oacute;n</td>
+                                                <td bgcolor="#FFFFFF" class="comentario" scope="col">
+                                                	<input name="Categoria" type="text" class="texto" value="Comunicaci&oacute;n" readonly="true" />
+                                                </td>
                                                 <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                                 <td bgcolor="#FFFFFF" scope="col">T. Producto</td>
-                                                <td bgcolor="#FFFFFF" class="comentario" scope="col"><label>Modem</label></td>
+                                                <td bgcolor="#FFFFFF" class="comentario" scope="col">
+                                                	<input name="TipoProducto" type="text" class="texto" value="Modem" readonly="true" />
+                                                </td>
                                                 <td align="center" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                                 <td bgcolor="#FFFFFF" scope="col">Tipo Problema</td>
-                                                <td bgcolor="#FFFFFF" class="comentario" scope="col"><label>Falla de Modem</label></td>
+                                                <td bgcolor="#FFFFFF" class="comentario" scope="col">
+                                                	<input name="Tipoproblema" type="text" class="texto" value="Falla de Modem" readonly="true" />
+                                                </td>
                                             </tr>
                                             <tr valign="middle" bgcolor="#FFFFFF" class="cabecera">
                                                 <td colspan="8" align="center" scope="col"><hr align="left" width="800" /></td>
                                             </tr>
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                                                 <td align="center" valign="top" bgcolor="#FFFFFF" scope="col"><div align="left">Descripci&oacute;n</div></td>
-                                                <td colspan="4" bgcolor="#FFFFFF" scope="col"><textarea name="iddescripcion" id="iddescripcion" cols="40" rows="5"></textarea></td>
+                                                <td colspan="4" bgcolor="#FFFFFF" scope="col"><textarea name="Descripcion" id="iddescripcion" cols="40" rows="5"></textarea></td>
                                                 <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                                 <td colspan="2" bgcolor="#FFFFFF" scope="col"><table width="345" height="52" border="0">
                                                         <tr>
@@ -135,7 +147,7 @@
                                                                     <div align="left" class="cabecera">Grupo de Asignaci&oacute;n</div>
                                                             </td>
                                                             <td width="4">&nbsp;</td>
-                                                            <td width="160"><select name="idgrupoasignacion" class="texto" id="idgrupoasignacion">
+                                                            <td width="160"><select name="GrupoAsignacion" class="texto" id="idgrupoasignacion">
                                                                     <option>Soporte Tecnico</option>
                                                                     <option>Analistas Funcionales</option>
                                                                     <option>Adminsitradores</option>
@@ -148,7 +160,7 @@
                                                         <tr>
                                                             <td class="cabecera">Especialista a derivar</td>
                                                             <td>&nbsp;</td>
-                                                            <td><select name="idespecialista" class="texto" id="idespecialista">
+                                                            <td><select name="EspecialistaAsignado" class="texto" id="idespecialista">
                                                                     <option>Cesar Ecos</option>
                                                                     <option>Douglas Calderon</option>
                                                                     <option>Juan Talara</option>
@@ -163,7 +175,9 @@
                                             </tr>
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
                                                 <td align="center" valign="top" bgcolor="#FFFFFF" scope="col"><div align="left">Observaci&oacute;n</div></td>
-                                                <td colspan="6" bgcolor="#FFFFFF" scope="col"><textarea name="idobservacion" id="idobservacion" cols="40" rows="5"></textarea>                    </td>
+                                                <td colspan="6" bgcolor="#FFFFFF" scope="col">
+                                                <textarea name="Observaciones" id="idobservacion" cols="40" rows="5"></textarea>
+                                             	</td>
                                                 <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                             </tr>
                                             <tr valign="middle" bgcolor="#66CC33" class="cabecera">
@@ -179,9 +193,7 @@
                                                 <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                                 <td bgcolor="#FFFFFF" scope="col">Prioridad</td>
                                                 <td bgcolor="#FFFFFF" scope="col">
-                                                    <label>
-                                                        10
-                                                    </label>
+                                                    <input name="Prioridad" type="text" class="texto" value="10" readonly="true" />
                                                 </td>
                                                 <td align="center" bgcolor="#FFFFFF" scope="col">&nbsp;</td>
                                                 <td bgcolor="#FFFFFF" scope="col">&nbsp;</td>

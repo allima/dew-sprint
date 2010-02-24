@@ -34,33 +34,38 @@
             <interceptor-ref name="usuario-usufinal"></interceptor-ref>
         </action>
 
-        <action name="Nuevo" class="Entidad.Ticket" method="nuevoTicket">
+        <action name="Nuevo" class="Entidad.TicketAction" method="nuevoTicket">
             <result name="todo_bien">/Registro_Ticket.jsp</result>
             <result name="problemas">/Login_Ticket.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
-        <action name="Modificar" class="Entidad.Ticket" method="modificarTicket">
+        <action name="ConsultarMA" class="Entidad.TicketAction" method="modificarTicket">
             <result name="todo_bien">/Consulta_Mayuda_Ticket.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
-        <action name="Derivar" class="Entidad.Ticket" method="derivarTicket">
+        <action name="Derivar" class="Entidad.TicketAction" method="consultarTicket">
             <result name="todo_bien">/Derivar_Ticket.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
-        <action name="Cerrar" class="Entidad.Ticket" method="cerrarTicket">
+        <action name="DerivarGra" class="Entidad.TicketAction" method="derivarTicket">
+            <result name="todo_bien">/Listado_Ticket.jsp</result>
+            <interceptor-ref name="basicStack"></interceptor-ref>
+        </action>
+
+        <action name="Cerrar" class="Entidad.TicketAction" method="cerrarTicket">
             <result name="todo_bien">/Cerrar_Ticket.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
-        <action name="Consultar" class="Entidad.Ticket" method="consultarTicket">
+        <action name="Consultar" class="Entidad.TicketAction" method="consultarTicket">
             <result name="todo_bien">/Consulta_Ticket.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
 
-        <action name="Eliminar" class="Entidad.Ticket" method="eliminarTicket">
+        <action name="Eliminar" class="Entidad.TicketAction" method="eliminarTicket">
             <result name="todo_bien">/Listado_Ticket.jsp</result>
             <interceptor-ref name="basicStack"></interceptor-ref>
         </action>
