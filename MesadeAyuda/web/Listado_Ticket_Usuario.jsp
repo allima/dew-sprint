@@ -163,7 +163,7 @@
                     <td class="texto"><div align="center">Hardware</div></td>
                     <td class="texto" align="center">Miguel Carrillo</td>
                     <td align="center" class="texto">Cerrado</td>
-                    <td class="texto"><a href="javascript:Consultaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                    <td class="texto"><a href="<%=request.getContextPath()%>/Consultar.action"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                   </tr>
                   <tr class="texto">
                     <td class="texto" align="center"><input type="checkbox" name="id_check3" id="id_check3" /></td>
@@ -174,7 +174,7 @@
                     <td class="texto"><div align="center">Software</div></td>
                     <td class="texto" align="center">Jose Paredez</td>
                     <td align="center" class="texto">Registrado</td>
-                    <td class="texto"><a href="javascript:Consultaticket(formulario);"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
+                    <td class="texto"><a href="<%=request.getContextPath()%>/Consultar.action"><img src="<%=request.getContextPath()%>/images/mod.gif" alt="Modificar" width="20" height="20" border="0" /></a></td>
                   </tr>
                   <tr class="texto">
                     <td class="texto" align="center">&nbsp;</td>

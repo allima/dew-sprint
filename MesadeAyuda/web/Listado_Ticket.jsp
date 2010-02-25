@@ -50,7 +50,7 @@
                                 </tr>
                                 <tr>
                                     <td width="437" height="16" align="left">
-                                        <input name="btnAgregar2" type="button" class="texto" id="btnAgregar2" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Nuevo.action'" value="Mantenimiento"/></td>
+                                       <!-- <input name="btnAgregar2" type="button" class="texto" id="btnAgregar2" onclick="window.location='<%=request.getContextPath()%>/gestiondeTicket/Nuevo.action'" value="Mantenimiento"/></td>-->
                                     <td width="524" valign="middle"><div align="right">
                                             <!--<input name="btnAgregar4" type="button" class="texto" id="btnAgregar4" onclick="javascript:nuevoticket(formulario);" value="Nuevo"/>-->
                                             <input class="texto" type="submit" value="Nuevo"/>
