@@ -33,7 +33,13 @@
             <interceptor-ref name="basicStack"></interceptor-ref>
             <interceptor-ref name="usuario-usufinal"></interceptor-ref>
         </action>
-
+        
+        <action name="PortalAdmin" class="Entidad.PortalUsuFinalAction">
+            <result name="ok">/portadaAdmin.jsp</result>
+            <interceptor-ref name="basicStack"></interceptor-ref>
+            <interceptor-ref name="usuario-usufinal"></interceptor-ref>
+        </action>
+        
         <action name="Nuevo" class="Entidad.TicketAction" method="nuevoTicket">
             <result name="todo_bien">/Registro_Ticket.jsp</result>
             <result name="problemas">/Login_Ticket.jsp</result>

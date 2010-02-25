@@ -12,7 +12,7 @@
    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Menu de Opciones</title>
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/general.css"/>
+        <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/general.css"/>
         <script type="text/javascript" src="<%=request.getContextPath()%>/javascripts/handler.js"></script>
         <script type="text/javascript" src="javascripts/validacion.js"></script>
 
@@ -34,8 +34,8 @@
                 </div>
                 <br /><br />
 
-        <span class="Etiqueta_user">&nbsp;&nbsp;&nbsp;Bienvenido: ${sessionScope.USUARIO_ACTUAL.nombres}</span>
-
+   <h><span class="Etiqueta_user">&nbsp;&nbsp;&nbsp;Pagina en construcción</span></h1>
+<!--
          <br/>
           <br/> <br/>
           <table border="0" width="100%">
@@ -54,6 +54,6 @@
           </td></tr>
           </table>
            <br/>
-
+-->
     </body>
 </html>
